@@ -1,0 +1,34 @@
+{
+  "name": "@bchatard/alfred-jetbrains",
+  "version": "1.0.0-alpha",
+  "description": "Alfred3 workflow to easily open your projects with your favorite JetBrains product.",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bchatard/alfred-jetbrains.git"
+  },
+  "keywords": [
+    "jebrains",
+    "alfred",
+    "workflow",
+    "alfred-workflow",
+    "productivity"
+  ],
+  "author": "bchatard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bchatard/alfred-jetbrains/issues"
+  },
+  "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
+  "dependencies": {
+    "alfy": "^0.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
