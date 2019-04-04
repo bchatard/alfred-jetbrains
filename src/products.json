@@ -1,0 +1,18 @@
+{
+  "IdeaCE": {
+    "preferences": "IdeaIC",
+    "bin": "idea"
+  },
+  "IdeaUE": {
+    "preferences": "IntelliJIdea",
+    "bin": "idea"
+  },
+  "PhpStorm": {
+    "preferences": "PhpStorm",
+    "bin": "phpstorm"
+  },
+  "WebStorm": {
+    "preferences": "WebStorm",
+    "bin": "webstorm"
+  }
+}

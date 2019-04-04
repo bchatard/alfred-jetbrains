@@ -7,9 +7,88 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>1048003F-FD09-4F66-883A-946C63FB3F25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C053716-F85B-468D-91F1-BFF99D725AFA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1048003F-FD09-4F66-883A-946C63FB3F25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
-	<string>Brice CHATARD</string>
+	<string></string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
@@ -18,6 +97,97 @@
 	<string>JetBrains - Open Project - v3</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Clean Projects Cache","arg":"cache:clean","subtitle":"for all products"}]</string>
+				<key>keyword</key>
+				<string>jb</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>JetBrains Actions</string>
+				<key>title</key>
+				<string>JetBrains Actions</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>78F02C95-38A7-4977-8A68-610BAFBEB137</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Action {var:action}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/action.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1048003F-FD09-4F66-883A-946C63FB3F25</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -32,7 +202,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>jb</string>
+				<string>pstorm</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -42,17 +212,116 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "PhpStorm"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Open Project</string>
 				<key>title</key>
+				<string>Open PhpStorm Project</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>if [[ -n "{query}" ]]; then
+	QUERY="{query}"
+	BIN=${jb_bin}
+	PROJECT_NAME=${jb_project_name}
+	
+	$(${BIN} ${QUERY})
+
+    echo ${PROJECT_NAME}
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Opening {query}</string>
+				<key>title</key>
+				<string>JetBrains</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>wstorm</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "WebStorm"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open WebStorm Project</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -70,14 +339,72 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1048003F-FD09-4F66-883A-946C63FB3F25</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>660</integer>
+		</dict>
+		<key>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</key>
 		<dict>
 			<key>xpos</key>
 			<integer>270</integer>
 			<key>ypos</key>
-			<integer>80</integer>
+			<integer>580</integer>
+		</dict>
+		<key>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</key>
+		<dict>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>7C053716-F85B-468D-91F1-BFF99D725AFA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>250</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>520</integer>
+		</dict>
+		<key>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>580</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>jb_product_cache_lifetime</key>
+		<string>86400</string>
+		<key>jb_project_cache_lifetime</key>
+		<string>3600</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
