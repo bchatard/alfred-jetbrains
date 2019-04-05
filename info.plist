@@ -87,10 +87,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>createdby</key>
-	<string></string>
-	<key>description</key>
-	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -247,7 +243,7 @@
 	QUERY="{query}"
 	BIN=${jb_bin}
 	PROJECT_NAME=${jb_project_name}
-	
+
 	$(${BIN} ${QUERY})
 
     echo ${PROJECT_NAME}
@@ -403,9 +399,5 @@ fi</string>
 		<key>jb_project_cache_lifetime</key>
 		<string>3600</string>
 	</dict>
-	<key>version</key>
-	<string></string>
-	<key>webaddress</key>
-	<string></string>
 </dict>
 </plist>
