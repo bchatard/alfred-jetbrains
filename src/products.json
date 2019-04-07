@@ -1,6 +1,26 @@
 {
+  "AppCode": {
+    "preferences": "AppCode",
+    "bin": "appcode"
+  },
+  "CLion": {
+    "preferences": "CLion",
+    "bin": "clion"
+  },
+  "DataGrip": {
+    "preferences": "DataGrip",
+    "bin": "datagrip"
+  },
+  "GoLand": {
+    "preferences": "GoLand",
+    "bin": "goland"
+  },
   "IdeaCE": {
     "preferences": "IdeaIC",
+    "bin": "idea"
+  },
+  "IdeaIE": {
+    "preferences": "IdeaIE",
     "bin": "idea"
   },
   "IdeaUE": {
@@ -10,6 +30,26 @@
   "PhpStorm": {
     "preferences": "PhpStorm",
     "bin": "phpstorm"
+  },
+  "PyCharmPro": {
+    "preferences": "PyCharm",
+    "bin": "pycharm"
+  },
+  "PyCharmCE": {
+    "preferences": "PyCharmCE",
+    "bin": "pycharm"
+  },
+  "PyCharmEdu": {
+    "preferences": "PyCharmEdu",
+    "bin": "pycharm"
+  },
+  "Rider": {
+    "preferences": "Rider",
+    "bin": "rider"
+  },
+  "RubyMine": {
+    "preferences": "RubyMine",
+    "bin": "rubymine"
   },
   "WebStorm": {
     "preferences": "WebStorm",

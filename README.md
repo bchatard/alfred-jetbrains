@@ -31,17 +31,30 @@ $ npm install -g @bchatard/alfred-jetbrains
 
 
 ### Default Keywords
+ * AppCode: `appcode`;
+ * CLion: `clion`;
+ * DataGrip: `datagrip`;
+ * GoLand: `goland`;
  * IntelliJ Idea: `idea`;
  * PhpStorm: `pstorm`;
+ * PyCharm: `pycharm`;
  * WebStorm: `wstorm`;
+ * Rider: [Help wanted](https://github.com/bchatard/alfred-jetbrains/issues/5);
+ * RubyMine: `rubymine`;
 
 
 ### Supported versions
 I test with this products/versions:
 
+* AppCode: 2019.1;
+* CLion: 2019.1;
+* DataGrip: 2019.1;
+* GoLand: 2019.1;
 * IntelliJ Idea CE: 2019.1;
 * PhpStorm: 2019.1;
+* PyCharm: 2019.1;
 * WebStorm: 2019.1;
+* RubyMine: 2019.1;
 
 v2018.3 works if you generate shell script through Toolbox (it works for me for PhpStorm)
 
