@@ -7,14 +7,6 @@ const knownProducts = require('./products.json');
 
 // @todo: allow override "knownProducts"
 
-/**
- * Local cache for product object
- *
- * @type {null}
- * @private
- */
-let _product = null;
-
 const getDirectories = srcPath => fs.readdirSync(srcPath)
   .filter(file => fs.lstatSync(path.join(srcPath, file)).isDirectory());
 
@@ -34,7 +26,7 @@ const getProduct = () => {
 const getPreferencePath = (product) => {
   const preferencesPath = `${process.env.HOME}/Library/Preferences`;
   const prefDirName = product.preferences;
-  const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`);
+  const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`); // year and dot release
   const paths = getDirectories(preferencesPath).filter(path => pattern.test(path));
 
   if (paths.length === 1) {

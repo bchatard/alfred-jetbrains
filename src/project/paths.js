@@ -61,9 +61,9 @@ const getProjectPaths = productPath => {
     },
   };
 
-  for (const o in cases) {
-    if (cases.hasOwnProperty(o)) {
-      const rawProjectPaths = cases[o]();
+  for (const caseKey in cases) {
+    if (cases.hasOwnProperty(caseKey)) {
+      const rawProjectPaths = cases[caseKey]();
       if (rawProjectPaths) {
         const projectPaths = [];
 

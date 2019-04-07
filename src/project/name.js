@@ -22,16 +22,18 @@ const getProductName = (projectPath) => {
     }
   };
 
-  for (const o in cases) {
-    if (cases.hasOwnProperty(o)) {
-      const projectName = cases[o]();
-      if (projectName) {
-        return projectName;
+  if (fs.existsSync(projectPath)) {
+    for (const caseKey in cases) {
+      if (cases.hasOwnProperty(caseKey)) {
+        const projectName = cases[caseKey]();
+        if (projectName) {
+          return projectName;
+        }
       }
     }
   }
 
-  console.error(`Can't find project name in ${projectPath}`);
+  // console.error(`Can't find project name in ${projectPath}`);
   return false;
 };
 

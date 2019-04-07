@@ -71,7 +71,7 @@ It's an early version
 
 
 ## Changelog
-[Changelog](CHANGELOG.md)
+[Changelog](https://github.com/bchatard/alfred-jetbrains/releases)
 
 
 ## License
