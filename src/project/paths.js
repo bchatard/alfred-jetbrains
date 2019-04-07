@@ -63,9 +63,13 @@ const getProjectPaths = productPath => {
 
   for (const caseKey in cases) {
     if (cases.hasOwnProperty(caseKey)) {
-      const rawProjectPaths = cases[caseKey]();
+      let rawProjectPaths = cases[caseKey]();
       if (rawProjectPaths) {
         const projectPaths = [];
+
+        rawProjectPaths = Object.prototype.toString.call(rawProjectPaths).indexOf('Object') !== -1
+          ? [rawProjectPaths] // one project case
+          : rawProjectPaths;
 
         rawProjectPaths.forEach(project => {
           projectPaths.push(project['@_value'].replace('$USER_HOME$', process.env.HOME));
