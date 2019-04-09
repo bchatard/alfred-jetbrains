@@ -10,10 +10,14 @@ You need [Node.js 8+](https://nodejs.org) and [Alfred 3.5+](https://www.alfredap
 This workflow need one of JetBrains products (__2019.1+__), and its [shell script](#init-shell-script) to works
 
 
-## Installation
+## Installation / Update
 ```shell
 $ npm install -g @bchatard/alfred-jetbrains
 ```
+
+Thanks to [Alfy](https://github.com/sindresorhus/alfy) and [alfred-notifier](https://github.com/SamVerschueren/alfred-notifier), you will be notify when a new version is available.
+
+You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-updater) to update all your "Alfy Workflow".
 
 ### Init shell script
 * Via JetBrains Toolbox:
@@ -89,7 +93,3 @@ It's an early version
 
 ## License
 [MIT](LICENSE) © [bchartard](https://github.com/bchatard)
-
-
-## Credits
-Thanks to [Alfy](https://github.com/sindresorhus/alfy)
