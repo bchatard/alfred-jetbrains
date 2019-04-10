@@ -28,7 +28,8 @@
   "dependencies": {
     "alfy": "^0.8.0",
     "execa": "^1.0.0",
-    "fast-xml-parser": "^3.12.16"
+    "fast-xml-parser": "^3.12.16",
+    "fuse.js": "^3.4.4"
   },
   "publishConfig": {
     "access": "public"
