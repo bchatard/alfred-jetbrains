@@ -28,6 +28,12 @@ const getProductName = (projectPath) => {
       const viaPath = `${projectPath}/.idea`;
       const imlFiles = getFiles(viaPath).filter(file => path.extname(file) === '.iml');
       return (imlFiles.length === 1) ? path.basename(imlFiles[0], '.iml') : false;
+    },
+    viaDirectoryName: () => {
+      if (!isIdeaDirExists) {
+        return false;
+      }
+      return path.basename(path.dirname(projectPath));
     }
   };
 
