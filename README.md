@@ -54,7 +54,7 @@ I test with this products/versions:
 * CLion: 2019.1;
 * DataGrip: 2019.1;
 * GoLand: 2019.1;
-* IntelliJ Idea CE: 2019.1;
+* IntelliJ Idea: 2019.1;
 * PhpStorm: 2019.1;
 * PyCharm: 2019.1;
 * WebStorm: 2019.1;
@@ -76,7 +76,26 @@ Some information are cached for better performance. You can change cache lifetim
 
 
 ## Customisation
-> @todo
+Some customization can be made:
+* change shell script name (aka `bin`)
+* change product _Preferences_ folder name (not recommended)
+
+### How-to
+1. Create a JSON file somewhere
+2. This JSON file need to follow the same structure of the _[original configuration file](https://github.com/bchatard/alfred-jetbrains/blob/master/src/products.json)_ (same key).
+3. Open the workflow, and go to the workflow configuration window (the icon like this [x])
+4. Add new environment variable: 
+   * name: `jb_product_customisation_file`
+   * value: the path to your JSON file (relative to your home - ex: `/.config/alfred-jetbrains/custom.json`) 
+
+Example:
+```json
+{
+  "PhpStorm": {
+    "bin": "pstorm"
+  }
+}
+```
 
 ## Known issue
 It's an early version
@@ -85,6 +104,7 @@ It's an early version
 ## Workflow Environment Variables
 * `jb_product_cache_lifetime`: cache lifetime in seconds for "product data" (application path, bin path etc) [default: 86400 seconds]
 * `jb_project_cache_lifetime`: cache lifetime in seconds for project list (one cache per app) [default: 3600 seconds]
+* `jb_product_customisation_file`: path to JSON file for [customisation](#customisation)
 
 
 ## Changelog
@@ -92,4 +112,4 @@ It's an early version
 
 
 ## License
-[MIT](LICENSE) © [bchartard](https://github.com/bchatard)
+[MIT](LICENSE) © [bchatard](https://github.com/bchatard)

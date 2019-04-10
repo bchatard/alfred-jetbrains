@@ -5,8 +5,6 @@ const execa = require('execa');
 
 const knownProducts = require('./products.json');
 
-// @todo: allow override "knownProducts"
-
 const getDirectories = srcPath => fs.readdirSync(srcPath)
   .filter(file => fs.lstatSync(path.join(srcPath, file)).isDirectory());
 
@@ -17,10 +15,37 @@ const getProduct = () => {
   //  3. "query" == alfy.input
   let key = process.argv.slice(3);
   if (key.length === 1 && knownProducts[key[0]]) {
+    // keep "key" in object, used in applyCustomisation
+    knownProducts[key[0]].key = key[0];
+
     return knownProducts[key[0]];
   }
 
   throw new Error('Can\'t find product, missing key');
+};
+
+const applyCustomisation = (product) => {
+  if (process.env.jb_product_customisation_file) {
+    const customisationFilePath = path.join(process.env.HOME, process.env.jb_product_customisation_file);
+    try {
+      if (fs.existsSync(customisationFilePath)) {
+        const additionalProducts = JSON.parse(fs.readFileSync(customisationFilePath).toString());
+        if (additionalProducts[product.key]) {
+          product = {
+            ...product,
+            ...additionalProducts[product.key]
+          };
+        }
+      }
+    } catch (e) {
+      // die silently
+      if (alfy.debug) {
+        console.error(e);
+      }
+    }
+  }
+
+  return product;
 };
 
 const getPreferencePath = (product) => {
@@ -75,10 +100,11 @@ const getApplicationPath = (product) => {
 };
 
 const get = () => {
-  const product = getProduct();
+  let product = getProduct();
   const cacheKey = `product.${product.bin}`;
   const cachedProduct = alfy.cache.get(cacheKey);
   if (!cachedProduct) {
+    product = applyCustomisation(product);
     product.preferencePath = getPreferencePath(product);
     product.applicationPath = getApplicationPath(product);
     alfy.cache.set(cacheKey, product, { maxAge: +process.env.jb_product_cache_lifetime * 1000 });

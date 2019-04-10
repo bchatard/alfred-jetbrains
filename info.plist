@@ -935,5 +935,11 @@ fi</string>
 		<key>jb_project_cache_lifetime</key>
 		<string>3600</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>jb_product_customisation_file</string>
+	</array>
+	<key>version</key>
+	<string></string>
 </dict>
 </plist>
