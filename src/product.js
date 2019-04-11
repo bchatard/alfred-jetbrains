@@ -1,12 +1,14 @@
-const alfy = require('alfy');
-const fs = require('fs');
-const path = require('path');
-const execa = require('execa');
+const alfy = require("alfy");
+const fs = require("fs");
+const path = require("path");
+const execa = require("execa");
 
-const knownProducts = require('./products.json');
+const knownProducts = require("./products.json");
 
-const getDirectories = srcPath => fs.readdirSync(srcPath)
-  .filter(file => fs.lstatSync(path.join(srcPath, file)).isDirectory());
+const getDirectories = srcPath =>
+  fs
+    .readdirSync(srcPath)
+    .filter(file => fs.lstatSync(path.join(srcPath, file)).isDirectory());
 
 const getProduct = () => {
   // remove the first three entries
@@ -21,15 +23,20 @@ const getProduct = () => {
     return knownProducts[key[0]];
   }
 
-  throw new Error('Can\'t find product, missing key');
+  throw new Error("Can't find product, missing key");
 };
 
-const applyCustomisation = (product) => {
+const applyCustomisation = product => {
   if (process.env.jb_product_customisation_file) {
-    const customisationFilePath = path.join(process.env.HOME, process.env.jb_product_customisation_file);
+    const customisationFilePath = path.join(
+      process.env.HOME,
+      process.env.jb_product_customisation_file
+    );
     try {
       if (fs.existsSync(customisationFilePath)) {
-        const additionalProducts = JSON.parse(fs.readFileSync(customisationFilePath).toString());
+        const additionalProducts = JSON.parse(
+          fs.readFileSync(customisationFilePath).toString()
+        );
         if (additionalProducts[product.key]) {
           product = {
             ...product,
@@ -48,11 +55,13 @@ const applyCustomisation = (product) => {
   return product;
 };
 
-const getPreferencePath = (product) => {
+const getPreferencePath = product => {
   const preferencesPath = `${process.env.HOME}/Library/Preferences`;
   const prefDirName = product.preferences;
   const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`); // year and dot release
-  const paths = getDirectories(preferencesPath).filter(path => pattern.test(path));
+  const paths = getDirectories(preferencesPath).filter(path =>
+    pattern.test(path)
+  );
 
   if (paths.length === 1) {
     return path.join(preferencesPath, paths[0]);
@@ -68,23 +77,23 @@ const getPreferencePath = (product) => {
   throw new Error(`Can't find preference path for ${prefDirName}`);
 };
 
-const getApplicationPath = (product) => {
+const getApplicationPath = product => {
   const bin = product.bin;
   const result = execa.shellSync(`which ${bin}`);
   if (result.failed) {
     throw new Error(result.stderr);
   }
   product.binPath = result.stdout;
-  const binContent = fs.readFileSync(product.binPath, { encoding: 'UTF-8' });
+  const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
   const pattern = new RegExp('open -a "(.*)" "\\$@"');
   const match = pattern.exec(binContent);
   if (match && match.length === 2) {
     let appPath = match[1];
-    appPath = appPath.split('/');
+    appPath = appPath.split("/");
     appPath = appPath.slice(0, -3); // remove last three entries ('Contents', 'MacOS', ${bin})
-    appPath = appPath.join('/');
+    appPath = appPath.join("/");
 
     return appPath;
   }
@@ -107,7 +116,9 @@ const get = () => {
     product = applyCustomisation(product);
     product.preferencePath = getPreferencePath(product);
     product.applicationPath = getApplicationPath(product);
-    alfy.cache.set(cacheKey, product, { maxAge: +process.env.jb_product_cache_lifetime * 1000 });
+    alfy.cache.set(cacheKey, product, {
+      maxAge: +process.env.jb_product_cache_lifetime * 1000
+    });
 
     return product;
   }

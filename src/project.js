@@ -1,7 +1,7 @@
-const alfy = require('alfy');
+const alfy = require("alfy");
 
-const projectPaths = require('./project/paths');
-const projectName = require('./project/name');
+const projectPaths = require("./project/paths");
+const projectName = require("./project/name");
 
 const buildItem = (product, projectPath) => {
   const name = projectName.get(projectPath);
@@ -19,7 +19,7 @@ const buildItem = (product, projectPath) => {
       },
       icon: {
         path: product.applicationPath,
-        type: 'fileicon'
+        type: "fileicon"
       },
       variables: {
         jb_project_name: name,
@@ -30,7 +30,7 @@ const buildItem = (product, projectPath) => {
   return false;
 };
 
-const getItems = (product) => {
+const getItems = product => {
   const cacheKey = `projects.${product.bin}`;
   const cachedProjects = alfy.cache.get(cacheKey);
   if (!cachedProjects) {
@@ -42,7 +42,9 @@ const getItems = (product) => {
         projects.push(item);
       }
     });
-    alfy.cache.set(cacheKey, projects, { maxAge: +process.env.jb_project_cache_lifetime * 1000 });
+    alfy.cache.set(cacheKey, projects, {
+      maxAge: +process.env.jb_project_cache_lifetime * 1000
+    });
 
     return projects;
   }
