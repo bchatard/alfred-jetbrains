@@ -529,14 +529,14 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>126</integer>
 				<key>script</key>
 				<string>if [[ -n "{query}" ]]; then
 	QUERY="{query}"
 	BIN=${jb_bin}
 	PROJECT_NAME=${jb_project_name}
 
-	$(${BIN} ${QUERY})
+	$(${BIN} "${QUERY}")
 
     echo ${PROJECT_NAME}
 fi</string>
