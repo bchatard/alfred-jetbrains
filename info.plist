@@ -529,7 +529,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>if [[ -n "{query}" ]]; then
 	QUERY="{query}"
