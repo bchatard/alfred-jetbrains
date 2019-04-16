@@ -1,5 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const execa = require("execa");
+
+const workspaceXpath = [
+  "(//component[@name='ProjectView']/panes/pane[@id='ProjectPane']/subPane/PATH/PATH_ELEMENT/option/@value)[1]",
+  "(//component[@name='ProjectView']/panes/pane[@id='ProjectPane']/subPane/expand/path/item[contains(@type, ':ProjectViewProjectNode')]/@name)[1]",
+  "((/project/component[@name='ChangeListManager']/ignored[contains(@path, '.iws')]/@path)[1])"
+];
 
 const getFiles = srcPath =>
   fs
@@ -37,6 +44,35 @@ const getProductName = projectPath => {
       );
       return imlFiles.length === 1 ? path.basename(imlFiles[0], ".iml") : false;
     },
+    viaWorkspaceXml: () => {
+      if (!isIdeaDirExists) {
+        return false;
+      }
+      const viaPath = `${projectPath}/.idea/workspace.xml`;
+      if (!fs.existsSync(viaPath)) {
+        return false;
+      }
+
+      for (const xpath of workspaceXpath) {
+        const result = execa.shellSync(
+          `xmllint --xpath "${xpath}" workspace.xml`,
+          { reject: false }
+        );
+        if (!result.failed && result.stdout.length) {
+          // stdout => ' name="kotlin-dsl-example"' or ' path="kotlin-dsl-example.iws"'
+          let name = result.stdout.split("=");
+          name = name.length === 2 ? name[1] : "";
+          name = name.replace(/^"+|"+$/g, ""); // remove " at the beginning and ending
+          name = name.replace(".iws", ""); // remove .iws
+          if (name.length) {
+            return name;
+          }
+        }
+      }
+
+      return false;
+    },
+    // fallback case, keep it in last position
     viaDirectoryName: () => {
       if (!isIdeaDirExists) {
         return false;
