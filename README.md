@@ -56,17 +56,15 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <summary>Supported versions</summary>
 I test with this products/versions:
 
-- AppCode: 2019.1;
-- CLion: 2019.1;
-- DataGrip: 2019.1;
-- GoLand: 2019.1;
-- IntelliJ Idea: 2019.1;
-- PhpStorm: 2019.1;
-- PyCharm: 2019.1;
-- WebStorm: 2019.1;
-- RubyMine: 2019.1;
-
-v2018.3 works if you generate shell script through Toolbox (it works for me for PhpStorm)
+- AppCode: 2018.3 / 2019.1;
+- CLion: 2018.3 / 2019.1;
+- DataGrip: 2018.3 / 2019.1;
+- GoLand: 2018.3 / 2019.1;
+- IntelliJ Idea: 2018.3 / 2019.1;
+- PhpStorm: 2018.3 / 2019.1;
+- PyCharm: 2018.3 / 2019.1;
+- WebStorm: 2018.3 / 2019.1;
+- RubyMine: 2018.3 / 2019.1;
 
 For other versions:
 
@@ -75,6 +73,13 @@ For other versions:
 
 </details>
 
+## Customisation
+
+Some of JetBrains product are available in different editions (ex: PyCharm - Professional, Edu & Community).
+In that case they share the same `bin` / `keyword`, so you need to customise the _Preferences_ folder to retrieve your projects.
+
+[Customisation](./doc/customisation.md)
+
 ## JetBrains Actions
 
 With keyword `jb` you can access to some actions for this workflow.
@@ -82,10 +87,6 @@ With keyword `jb` you can access to some actions for this workflow.
 ### Clean Projects Cache
 
 Some information are cached for better performance. You can change cache lifetime (see [environment variable](#workflow-environment-variables)). This command flush all cache.
-
-## Customisation
-
-[Customization](./doc/customization.md)
 
 ## Known issue
 

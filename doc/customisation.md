@@ -3,7 +3,7 @@
 Some customization can be made:
 
 - change shell script name (aka `bin`)
-- change product _Preferences_ folder name (not recommended)
+- change product _Preferences_ folder name (for products with multiple editions)
 
 ### How-to
 
@@ -35,3 +35,17 @@ Examples:
   }
 }
 ```
+
+### Available _Preferences_
+
+#### PyCharm
+
+- `PyCharm` for PyCharm Professional (default)
+- `PyCharmCE` for PyCharm Community
+- `PyCharmEdu` for PyCharm Edu
+
+#### IntelliJIdea
+
+- `IntelliJIdea` for IntelliJ Idea Ultimate Edition (default)
+- `IdeaIC` for IntelliJ Idea Community
+- `IdeaIE` for IntelliJ Idea Community Educational
