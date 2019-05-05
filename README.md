@@ -75,10 +75,14 @@ For other versions:
 
 ## Customisation
 
+- [Product](doc/customisation/product.md)
+
 Some of JetBrains product are available in different editions (ex: PyCharm - Professional, Edu & Community).
 In that case they share the same `bin` / `keyword`, so you need to customise the _Preferences_ folder to retrieve your projects.
 
-[Customisation](./doc/customisation.md)
+- [Search](doc/customisation/search.md)
+
+A search engine is used to retrieve relevant project. For some use cases, the default configuration is not optimal for you.
 
 ## JetBrains Actions
 
@@ -96,7 +100,8 @@ It's an early version
 
 - `jb_product_cache_lifetime`: cache lifetime in seconds for "product data" (application path, bin path etc) [default: 86400 seconds]
 - `jb_project_cache_lifetime`: cache lifetime in seconds for project list (one cache per app) [default: 3600 seconds]
-- `jb_product_customisation_file`: path to JSON file for [customisation](#customisation)
+- `jb_product_customisation_file`: path to JSON file for [product customisation](#customisation)
+- `jb_search_customisation_file`: path to JSON file for [search customisation](#customisation)
 
 ## Changelog
 
