@@ -38,4 +38,4 @@ const searchOptions = () => {
   return fuseOptions;
 };
 
-export default searchOptions;
+exports.get = searchOptions;

@@ -29,8 +29,8 @@ if (items.length) {
     let matchItems = [];
     let matchTime;
     if (process.env.jb_enhanced_search) {
-      const searchOptions = require("search");
-      const fuse = new fuseEngine(items, searchOptions);
+      const searchOptions = require("./search");
+      const fuse = new fuseEngine(items, searchOptions.get());
       matchItems = fuse.search(query);
       matchTime = new Date();
     } else {
