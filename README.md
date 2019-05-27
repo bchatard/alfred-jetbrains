@@ -28,7 +28,7 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
   - In the following form, enable _Generate shell scripts_, and set a path for script
   - More info: [Toolbox App 1.11: What’s New.](https://blog.jetbrains.com/blog/2018/08/23/toolbox-app-1-11-whats-new/)
 - Via Product
-  - [Help welcomed](https://github.com/bchatard/alfred-jetbrains/issues/1)
+  ![Create Command-line Launcher](./doc/img/command_line_launcher.gif)
 
 ## How to use
 
