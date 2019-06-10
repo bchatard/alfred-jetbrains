@@ -35,7 +35,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "prettier": "1.18.0",
+    "prettier": "1.18.2",
     "husky": "2.4.0",
     "pretty-quick": "1.11.0"
   },
