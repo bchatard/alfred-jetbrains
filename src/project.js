@@ -3,8 +3,7 @@ const alfy = require("alfy");
 const projectPaths = require("./project/paths");
 const projectName = require("./project/name");
 
-const buildItem = (product, projectPath) => {
-  const name = projectName.get(projectPath);
+const buildItem = (product, projectPath, name = projectName.get(projectPath)) => {
   if (name) {
     return {
       uid: name,
@@ -51,4 +50,5 @@ const getItems = product => {
   return cachedProjects;
 };
 
+exports.buildItem = buildItem;
 exports.getItems = getItems;
