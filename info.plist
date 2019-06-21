@@ -1494,6 +1494,8 @@ ${ide} ${dir}</string>
 	<dict>
 		<key>02A18BEE-5C48-4FD5-B8D7-9A05400CC9D0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1225</integer>
 			<key>ypos</key>
@@ -1522,6 +1524,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>18358D8B-E3C9-428B-8193-450ABDA2608B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1529,6 +1533,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>2AB7B6CE-F31B-4201-94F1-1A8FB0E18B57</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1536,6 +1542,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>43C7961C-17E9-444B-B96B-F296F4C01FA0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1543,6 +1551,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>48BFF872-93CA-4E7F-89F5-858EB3838A04</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1550,6 +1560,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>50702B10-DA94-4F2A-9CF9-BC19869E0CD7</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1557,6 +1569,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>57D83CB1-96FF-48DD-96C0-05D6B6751176</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1045</integer>
 			<key>ypos</key>
@@ -1578,6 +1592,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>6A3B56B9-7FE5-44F7-A08F-D411C530B361</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1599,6 +1615,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>6FF22232-370E-4C8B-8B1B-0815CBD6DA44</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1620,6 +1638,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>7B42FF67-C638-4163-B162-E1AE369080D6</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1627,6 +1647,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>7B7A5599-8326-4D65-BB8B-9CF665DE8685</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1655,6 +1677,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>B0FD8BD4-2A6C-45CB-BF51-AFA94D25F955</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1662,6 +1686,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>B35C29AD-3D38-418E-9732-818A064CA45B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1669,6 +1695,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>BD2964D6-CDA3-4822-9FA9-A8FC94B6328E</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1676,6 +1704,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>BE275211-95A0-4E7C-9523-3749EC3B65BC</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1690,6 +1720,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>D53D2654-9914-4E60-A24C-862DF45F1FB9</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
@@ -1704,6 +1736,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>D75DEA2F-8B29-4635-8973-BC641681CE42</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1718,6 +1752,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>DD7409B6-C75A-4FD3-81E2-E0C47D4AD80B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1725,6 +1761,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>E6F9A209-6498-42E7-A5FA-41AC8F25EDBC</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>860</integer>
 			<key>ypos</key>
@@ -1732,6 +1770,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>F5F39389-3C98-4FEB-99CC-A59D11684A8A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1050</integer>
 			<key>ypos</key>
@@ -1739,6 +1779,8 @@ ${ide} ${dir}</string>
 		</dict>
 		<key>F9D3E430-1D8D-4404-9994-A787EFC9DD52</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
 			<key>xpos</key>
 			<integer>1055</integer>
 			<key>ypos</key>
