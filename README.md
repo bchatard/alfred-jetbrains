@@ -2,6 +2,8 @@
 
 **Alfred3** workflow to easily open your projects with your favorite JetBrains product.
 
+**Alfred4** work in progress (see [#22](https://github.com/bchatard/alfred-jetbrains/issues/22)).
+
 ![npm version](https://img.shields.io/npm/v/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 ![npm downloads per week](https://img.shields.io/npm/dm/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 

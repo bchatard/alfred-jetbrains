@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
   "dependencies": {
-    "alfy": "^0.8.0",
+    "alfy": "^0.9.0",
     "execa": "^1.0.0",
     "fast-xml-parser": "^3.12.16",
     "fuse.js": "^3.4.4"
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "prettier": "1.18.2",
-    "husky": "2.4.1",
+    "husky": "3.0.0",
     "pretty-quick": "1.11.1"
   },
   "husky": {
