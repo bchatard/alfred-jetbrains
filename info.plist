@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -51,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +90,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -116,7 +116,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -151,24 +151,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3C169770-8687-4FE2-863E-432BFFF3D48A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -194,7 +181,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -272,7 +259,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -350,7 +337,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C169770-8687-4FE2-863E-432BFFF3D48A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -363,7 +363,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1087,15 +1087,9 @@ fi</string>
 				<key>escaping</key>
 				<integer>126</integer>
 				<key>script</key>
-				<string>if [[ -n "{query}" ]]; then
-	QUERY="{query}"
-	BIN=${jb_bin}
-	PROJECT_NAME=${jb_project_name}
+				<string>QUERY="{query}"
 
-	$(${BIN} "${QUERY}")
-
-    echo ${PROJECT_NAME}
-fi</string>
+eval ${QUERY}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1106,7 +1100,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</string>
+			<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1662,15 +1656,6 @@ fi</string>
 			<key>ypos</key>
 			<integer>1110</integer>
 		</dict>
-		<key>469D8A12-BA01-44CF-A7C1-AE6A79BE69F1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1335</integer>
-			<key>ypos</key>
-			<integer>690</integer>
-		</dict>
 		<key>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</key>
 		<dict>
 			<key>colorindex</key>
@@ -1796,6 +1781,13 @@ fi</string>
 			<integer>1045</integer>
 			<key>ypos</key>
 			<integer>630</integer>
+		</dict>
+		<key>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1340</integer>
+			<key>ypos</key>
+			<integer>690</integer>
 		</dict>
 		<key>BAFDEF6A-9033-46B2-8256-D4655AE8E891</key>
 		<dict>

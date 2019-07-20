@@ -8,9 +8,7 @@ if (majorVersion < 8) {
 }
 
 const product = require("./product").get();
-const project = require("./project");
-
 const query = alfy.input;
-const projectName = /[^/]*$/.exec(query)[0];
 
-alfy.output(project.buildItem(product, query, projectName));
+// output
+console.log(product.binPath + ' "' + query + '"');
