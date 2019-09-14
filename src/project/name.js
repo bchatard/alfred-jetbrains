@@ -54,7 +54,7 @@ const getProductName = projectPath => {
       }
 
       for (const xpath of workspaceXpath) {
-        const result = execa.shellSync(
+        const result = execa.commandSync(
           `xmllint --xpath "${xpath}" workspace.xml`,
           { reject: false }
         );

@@ -2,6 +2,7 @@ const alfy = require("alfy");
 const fs = require("fs");
 const path = require("path");
 const execa = require("execa");
+const which = require("which");
 
 const knownProducts = require("./products.json");
 
@@ -79,11 +80,7 @@ const getPreferencePath = product => {
 
 const getApplicationPath = product => {
   const bin = product.bin;
-  const result = execa.shellSync(`which ${bin}`);
-  if (result.failed) {
-    throw new Error(result.stderr);
-  }
-  product.binPath = result.stdout;
+  product.binPath = which.sync(bin, { nothrow: true });
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
