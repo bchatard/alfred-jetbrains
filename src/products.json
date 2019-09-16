@@ -33,15 +33,15 @@
   },
   "PyCharmPro": {
     "preferences": "PyCharm",
-    "bin": "pycharm"
+    "bin": ["pycharm", "charm"]
   },
   "PyCharmCE": {
     "preferences": "PyCharmCE",
-    "bin": "pycharm"
+    "bin": ["pycharm", "charm"]
   },
   "PyCharmEdu": {
     "preferences": "PyCharmEdu",
-    "bin": "pycharm"
+    "bin": ["pycharm", "charm"]
   },
   "Rider": {
     "preferences": "Rider",
