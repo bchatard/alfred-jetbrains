@@ -29,7 +29,7 @@
   },
   "PhpStorm": {
     "preferences": "PhpStorm",
-    "bin": ["pstorm", "phpstorm"]
+    "bin": ["phpstorm", "pstorm"]
   },
   "PyCharmPro": {
     "preferences": "PyCharm",
