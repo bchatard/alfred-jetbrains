@@ -295,6 +295,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -333,7 +335,7 @@
 			<key>uid</key>
 			<string>04BB4121-6857-40CA-A178-444F805A4609</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -342,6 +344,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -380,7 +384,7 @@
 			<key>uid</key>
 			<string>C924EB4E-3A7E-4513-A237-261E1E274B66</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -389,6 +393,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -427,7 +433,7 @@
 			<key>uid</key>
 			<string>5820F56E-186F-4CC4-B473-284FECF50653</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -436,6 +442,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -474,7 +482,7 @@
 			<key>uid</key>
 			<string>DA238413-3FBD-4358-82B7-988FF9101561</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -483,6 +491,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -502,7 +512,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "IdeaUE"</string>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "IntelliJIdea"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -521,7 +531,7 @@
 			<key>uid</key>
 			<string>141026F3-CC2E-4808-BF5B-BC24CCA41438</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -582,6 +592,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -620,7 +632,7 @@ fi</string>
 			<key>uid</key>
 			<string>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -629,6 +641,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -648,7 +662,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "PyCharmPro"</string>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "PyCharm"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -667,7 +681,7 @@ fi</string>
 			<key>uid</key>
 			<string>9A358188-6F3F-4063-AA6C-5DE6E7102212</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -676,6 +690,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -714,7 +730,7 @@ fi</string>
 			<key>uid</key>
 			<string>6DEF14CA-6899-481D-9590-8A6BCC174DEF</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -723,6 +739,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -761,7 +779,7 @@ fi</string>
 			<key>uid</key>
 			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -770,6 +788,8 @@ fi</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -808,7 +828,7 @@ fi</string>
 			<key>uid</key>
 			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -936,15 +956,17 @@ fi</string>
 		<string>86400</string>
 		<key>jb_product_customisation_file</key>
 		<string></string>
-		<key>jb_search_customisation_file</key>
-		<string></string>
 		<key>jb_project_cache_lifetime</key>
 		<string>3600</string>
+		<key>jb_search_customisation_file</key>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>jb_product_customisation_file</string>
+		<string>jb_preferences_pycharm</string>
 		<string>jb_search_customisation_file</string>
+		<string>jb_preferences_intellijidea</string>
+		<string>jb_product_customisation_file</string>
 	</array>
 	<key>version</key>
 	<string></string>

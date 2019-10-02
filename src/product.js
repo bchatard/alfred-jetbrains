@@ -57,7 +57,10 @@ const applyCustomisation = product => {
 
 const getPreferencePath = product => {
   const preferencesPath = `${process.env.HOME}/Library/Preferences`;
-  const prefDirName = product.preferences;
+
+  const customPrefDirName =
+    process.env[`jb_preferences_${product.key.toLowerCase()}`];
+  const prefDirName = customPrefDirName || product.preferences;
   const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`); // year and dot release
   const paths = getDirectories(preferencesPath).filter(path =>
     pattern.test(path)
