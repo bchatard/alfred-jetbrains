@@ -3,29 +3,33 @@ const alfy = require("alfy");
 const projectPaths = require("./project/paths");
 const projectName = require("./project/name");
 
-const buildItem = (product, projectPath) => {
+const buildItem = (product, name, projectPath) => {
+  return {
+    uid: name,
+    title: name,
+    match: name,
+    subtitle: projectPath,
+    arg: projectPath,
+    autocomplete: name,
+    text: {
+      copy: projectPath,
+      largetype: name
+    },
+    icon: {
+      path: product.applicationPath,
+      type: "fileicon"
+    },
+    variables: {
+      jb_project_name: name,
+      jb_bin: product.binPath
+    }
+  };
+};
+
+const buildProductItem = (product, projectPath) => {
   const name = projectName.get(projectPath);
   if (name) {
-    return {
-      uid: name,
-      title: name,
-      match: name,
-      subtitle: projectPath,
-      arg: projectPath,
-      autocomplete: name,
-      text: {
-        copy: projectPath,
-        largetype: name
-      },
-      icon: {
-        path: product.applicationPath,
-        type: "fileicon"
-      },
-      variables: {
-        jb_project_name: name,
-        jb_bin: product.binPath
-      }
-    };
+    return buildItem(product, name, projectPath);
   }
   return false;
 };
@@ -37,7 +41,7 @@ const getItems = product => {
     const projects = [];
     const paths = projectPaths.get(product.preferencePath);
     paths.forEach(path => {
-      const item = buildItem(product, path);
+      const item = buildProductItem(product, path);
       if (item) {
         projects.push(item);
       }
@@ -52,3 +56,4 @@ const getItems = product => {
 };
 
 exports.getItems = getItems;
+exports.buildItem = buildItem;
