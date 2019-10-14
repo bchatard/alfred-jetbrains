@@ -1,7 +1,7 @@
 const alfy = require("alfy");
 const fs = require("fs");
 const path = require("path");
-const execa = require("execa");
+const which = require("which");
 
 const knownProducts = require("./products.json");
 
@@ -57,7 +57,10 @@ const applyCustomisation = product => {
 
 const getPreferencePath = product => {
   const preferencesPath = `${process.env.HOME}/Library/Preferences`;
-  const prefDirName = product.preferences;
+
+  const customPrefDirName =
+    process.env[`jb_preferences_${product.key.toLowerCase()}`];
+  const prefDirName = customPrefDirName || product.preferences;
   const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`); // year and dot release
   const paths = getDirectories(preferencesPath).filter(path =>
     pattern.test(path)
@@ -78,12 +81,29 @@ const getPreferencePath = product => {
 };
 
 const getApplicationPath = product => {
-  const bin = product.bin;
-  const result = execa.shellSync(`which ${bin}`);
-  if (result.failed) {
-    throw new Error(result.stderr);
+  let bins = product.bin;
+  if (!Array.isArray(bins)) {
+    bins = [bins];
   }
-  product.binPath = result.stdout;
+  let binPath = null;
+  for (const bin of bins) {
+    binPath = which.sync(bin, { nothrow: true });
+    // is not null and path length is greater than bin length (weird case)
+    if (binPath !== null && binPath.length > bin.length) {
+      break;
+    }
+  }
+
+  if (!binPath) {
+    throw new Error(
+      `Unable to find bin for ${product.key}. Search for bin named: ${bins.join(
+        ", "
+      )}`
+    );
+  }
+
+  product.binPath = binPath;
+
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
@@ -110,7 +130,7 @@ const getApplicationPath = product => {
 
 const get = () => {
   let product = getProduct();
-  const cacheKey = `product.${product.bin}`;
+  const cacheKey = `product.${product.key}`;
   const cachedProduct = alfy.cache.get(cacheKey);
   if (!cachedProduct) {
     product = applyCustomisation(product);

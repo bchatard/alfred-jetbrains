@@ -31,7 +31,7 @@ const buildItem = (product, projectPath) => {
 };
 
 const getItems = product => {
-  const cacheKey = `projects.${product.bin}`;
+  const cacheKey = `projects.${product.key}`;
   const cachedProjects = alfy.cache.get(cacheKey);
   if (!cachedProjects) {
     const projects = [];

@@ -8,50 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>012169AF-83E9-44E2-B7CF-445FCF3A5C30</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>01AE2367-D15E-496F-8AD7-84196AB6CB1B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>04BB4121-6857-40CA-A178-444F805A4609</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>081D8750-CD0C-4386-859C-ABF290047897</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -86,84 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>14213B27-1EF2-4639-9380-D904C1FCFFDF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>18358D8B-E3C9-428B-8193-450ABDA2608B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A1B80274-8986-4826-B902-5DEDBF887C28</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1D5A864E-F875-4ACF-828A-3AFD59B53628</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2AB7B6CE-F31B-4201-94F1-1A8FB0E18B57</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1D5A864E-F875-4ACF-828A-3AFD59B53628</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>43C7961C-17E9-444B-B96B-F296F4C01FA0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>773723B6-C42D-402A-A791-9AE72C73253C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<array>
 			<dict>
@@ -177,37 +60,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5FD6581B-21A2-4BC8-AD39-C19593B1CE70</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6A3B56B9-7FE5-44F7-A08F-D411C530B361</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5FD6581B-21A2-4BC8-AD39-C19593B1CE70</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -242,50 +99,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6FF22232-370E-4C8B-8B1B-0815CBD6DA44</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BAFDEF6A-9033-46B2-8256-D4655AE8E891</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>773723B6-C42D-402A-A791-9AE72C73253C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7B7A5599-8326-4D65-BB8B-9CF665DE8685</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>012169AF-83E9-44E2-B7CF-445FCF3A5C30</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -333,58 +151,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A1B80274-8986-4826-B902-5DEDBF887C28</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3C169770-8687-4FE2-863E-432BFFF3D48A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BAFDEF6A-9033-46B2-8256-D4655AE8E891</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BD2964D6-CDA3-4822-9FA9-A8FC94B6328E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C924EB4E-3A7E-4513-A237-261E1E274B66</key>
 		<array>
 			<dict>
@@ -411,50 +177,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D75DEA2F-8B29-4635-8973-BC641681CE42</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>081D8750-CD0C-4386-859C-ABF290047897</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>DA238413-3FBD-4358-82B7-988FF9101561</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>DD7409B6-C75A-4FD3-81E2-E0C47D4AD80B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>14213B27-1EF2-4639-9380-D904C1FCFFDF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E6F9A209-6498-42E7-A5FA-41AC8F25EDBC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>01AE2367-D15E-496F-8AD7-84196AB6CB1B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -470,6 +197,27 @@
 	<string>JetBrains - Open Project - v3</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Action {var:action}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -525,27 +273,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Action {var:action}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>variables</key>
@@ -560,46 +287,6 @@
 			<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>appcode</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>6A3B56B9-7FE5-44F7-A08F-D411C530B361</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "AppCode"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5FD6581B-21A2-4BC8-AD39-C19593B1CE70</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -702,86 +389,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "CLion"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>012169AF-83E9-44E2-B7CF-445FCF3A5C30</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>clion</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>7B7A5599-8326-4D65-BB8B-9CF665DE8685</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "DataGrip"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>01AE2367-D15E-496F-8AD7-84196AB6CB1B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>datagrip</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>E6F9A209-6498-42E7-A5FA-41AC8F25EDBC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -827,29 +434,6 @@
 			<string>5820F56E-186F-4CC4-B473-284FECF50653</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "DataGrip"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -903,63 +487,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>goland</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>BD2964D6-CDA3-4822-9FA9-A8FC94B6328E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "IdeaUE"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A1B80274-8986-4826-B902-5DEDBF887C28</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>idea</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>18358D8B-E3C9-428B-8193-450ABDA2608B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -985,7 +512,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "IdeaUE"</string>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "IntelliJIdea"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1005,27 +532,6 @@
 			<string>141026F3-CC2E-4808-BF5B-BC24CCA41438</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Opening {query}</string>
-				<key>title</key>
-				<string>JetBrains</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1075,72 +581,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>3C169770-8687-4FE2-863E-432BFFF3D48A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>126</integer>
-				<key>script</key>
-				<string>QUERY="{query}"
-
-eval ${QUERY}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "PhpStorm"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BAFDEF6A-9033-46B2-8256-D4655AE8E891</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>phpstorm</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>6FF22232-370E-4C8B-8B1B-0815CBD6DA44</string>
+			<string>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1196,29 +637,6 @@ eval ${QUERY}</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "PyCharm"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>14213B27-1EF2-4639-9380-D904C1FCFFDF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1244,7 +662,7 @@ eval ${QUERY}</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "PyCharmPro"</string>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "PyCharm"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1264,23 +682,6 @@ eval ${QUERY}</string>
 			<string>9A358188-6F3F-4063-AA6C-5DE6E7102212</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>pycharm</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>DD7409B6-C75A-4FD3-81E2-E0C47D4AD80B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1334,63 +735,6 @@ eval ${QUERY}</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>webstorm</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>D75DEA2F-8B29-4635-8973-BC641681CE42</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "WebStorm"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>081D8750-CD0C-4386-859C-ABF290047897</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>rider</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>43C7961C-17E9-444B-B96B-F296F4C01FA0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1436,69 +780,6 @@ eval ${QUERY}</string>
 			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "Rider"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>773723B6-C42D-402A-A791-9AE72C73253C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>rubymine</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>2AB7B6CE-F31B-4201-94F1-1A8FB0E18B57</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/fileAction.js "$1" "RubyMine"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1D5A864E-F875-4ACF-828A-3AFD59B53628</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1554,39 +835,12 @@ eval ${QUERY}</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>012169AF-83E9-44E2-B7CF-445FCF3A5C30</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>270</integer>
-		</dict>
-		<key>01AE2367-D15E-496F-8AD7-84196AB6CB1B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>390</integer>
-		</dict>
 		<key>04BB4121-6857-40CA-A178-444F805A4609</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>150</integer>
-		</dict>
-		<key>081D8750-CD0C-4386-859C-ABF290047897</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>990</integer>
 		</dict>
 		<key>1048003F-FD09-4F66-883A-946C63FB3F25</key>
 		<dict>
@@ -1602,69 +856,6 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>630</integer>
 		</dict>
-		<key>14213B27-1EF2-4639-9380-D904C1FCFFDF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>870</integer>
-		</dict>
-		<key>18358D8B-E3C9-428B-8193-450ABDA2608B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>630</integer>
-		</dict>
-		<key>1D5A864E-F875-4ACF-828A-3AFD59B53628</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>1230</integer>
-		</dict>
-		<key>2AB7B6CE-F31B-4201-94F1-1A8FB0E18B57</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>1230</integer>
-		</dict>
-		<key>3C169770-8687-4FE2-863E-432BFFF3D48A</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1490</integer>
-			<key>ypos</key>
-			<integer>690</integer>
-		</dict>
-		<key>43C7961C-17E9-444B-B96B-F296F4C01FA0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>1110</integer>
-		</dict>
-		<key>47EBC174-70A0-4F4F-AEBC-7609DFCDADDF</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>510</integer>
-		</dict>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<dict>
 			<key>xpos</key>
@@ -1672,30 +863,12 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
-		<key>5FD6581B-21A2-4BC8-AD39-C19593B1CE70</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
 		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>1230</integer>
-		</dict>
-		<key>6A3B56B9-7FE5-44F7-A08F-D411C530B361</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>150</integer>
 		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<dict>
@@ -1711,30 +884,12 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
-		<key>6FF22232-370E-4C8B-8B1B-0815CBD6DA44</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>750</integer>
-		</dict>
 		<key>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</key>
 		<dict>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>600</integer>
 			<key>ypos</key>
 			<integer>20</integer>
-		</dict>
-		<key>773723B6-C42D-402A-A791-9AE72C73253C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>1110</integer>
 		</dict>
 		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
 		<dict>
@@ -1742,15 +897,6 @@ eval ${QUERY}</string>
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>20</integer>
-		</dict>
-		<key>7B7A5599-8326-4D65-BB8B-9CF665DE8685</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>270</integer>
 		</dict>
 		<key>7C053716-F85B-468D-91F1-BFF99D725AFA</key>
 		<dict>
@@ -1773,40 +919,6 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>1110</integer>
 		</dict>
-		<key>A1B80274-8986-4826-B902-5DEDBF887C28</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>630</integer>
-		</dict>
-		<key>B93D8B33-B1B5-4123-BB5A-F26A4DCF880B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1340</integer>
-			<key>ypos</key>
-			<integer>690</integer>
-		</dict>
-		<key>BAFDEF6A-9033-46B2-8256-D4655AE8E891</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1045</integer>
-			<key>ypos</key>
-			<integer>750</integer>
-		</dict>
-		<key>BD2964D6-CDA3-4822-9FA9-A8FC94B6328E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>510</integer>
-		</dict>
 		<key>C924EB4E-3A7E-4513-A237-261E1E274B66</key>
 		<dict>
 			<key>xpos</key>
@@ -1821,15 +933,6 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>750</integer>
 		</dict>
-		<key>D75DEA2F-8B29-4635-8973-BC641681CE42</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>990</integer>
-		</dict>
 		<key>DA238413-3FBD-4358-82B7-988FF9101561</key>
 		<dict>
 			<key>xpos</key>
@@ -1837,28 +940,10 @@ eval ${QUERY}</string>
 			<key>ypos</key>
 			<integer>510</integer>
 		</dict>
-		<key>DD7409B6-C75A-4FD3-81E2-E0C47D4AD80B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>870</integer>
-		</dict>
-		<key>E6F9A209-6498-42E7-A5FA-41AC8F25EDBC</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>390</integer>
-		</dict>
 		<key>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<integer>600</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1878,8 +963,10 @@ eval ${QUERY}</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>jb_product_customisation_file</string>
+		<string>jb_preferences_pycharm</string>
 		<string>jb_search_customisation_file</string>
+		<string>jb_preferences_intellijidea</string>
+		<string>jb_product_customisation_file</string>
 	</array>
 	<key>version</key>
 	<string></string>

@@ -1,8 +1,6 @@
 # JetBrains: Open project
 
-**Alfred3** workflow to easily open your projects with your favorite JetBrains product.
-
-**Alfred4** work in progress (see [#22](https://github.com/bchatard/alfred-jetbrains/issues/22)).
+**Alfred3** & **Alfred4** workflow to easily open your projects with your favorite JetBrains product.
 
 ![npm version](https://img.shields.io/npm/v/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 ![npm downloads per week](https://img.shields.io/npm/dm/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
@@ -45,9 +43,9 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 - CLion: `clion`;
 - DataGrip: `datagrip`;
 - GoLand: `goland`;
-- IntelliJ Idea: `idea`;
+- IntelliJ Idea: `idea` (default to Ultimate Edition, see [customisation to change this](#customisation));
 - PhpStorm: `pstorm`;
-- PyCharm: `pycharm`;
+- PyCharm: `pycharm` (default to Professional Edition, see [customisation to change this](#customisation));
 - WebStorm: `wstorm`;
 - Rider: [Help wanted](https://github.com/bchatard/alfred-jetbrains/issues/5);
 - RubyMine: `rubymine`;
@@ -58,15 +56,15 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <summary>Supported versions</summary>
 I test with this products/versions:
 
-- AppCode: 2018.3 / 2019.1;
-- CLion: 2018.3 / 2019.1;
-- DataGrip: 2018.3 / 2019.1;
-- GoLand: 2018.3 / 2019.1;
-- IntelliJ Idea: 2018.3 / 2019.1;
-- PhpStorm: 2018.3 / 2019.1;
-- PyCharm: 2018.3 / 2019.1;
-- WebStorm: 2018.3 / 2019.1;
-- RubyMine: 2018.3 / 2019.1;
+- AppCode: 2018.3 / 2019.+;
+- CLion: 2018.3 / 2019.+;
+- DataGrip: 2018.3 / 2019.+;
+- GoLand: 2018.3 / 2019.+;
+- IntelliJ Idea: 2018.3 / 2019.+;
+- PhpStorm: 2018.3 / 2019.+;
+- PyCharm: 2018.3 / 2019.+;
+- WebStorm: 2018.3 / 2019.+;
+- RubyMine: 2018.3 / 2019.+;
 
 For other versions:
 
@@ -77,7 +75,8 @@ For other versions:
 
 ## Customisation
 
-- [Product](doc/customisation/product.md)
+- [Change Product Edition](doc/customisation/edition.md)
+- [Change `bin` name](doc/customisation/bin.md)
 
 Some of JetBrains product are available in different editions (ex: PyCharm - Professional, Edu & Community).
 In that case they share the same `bin` / `keyword`, so you need to customise the _Preferences_ folder to retrieve your projects.
@@ -93,10 +92,6 @@ With keyword `jb` you can access to some actions for this workflow.
 ### Clean Projects Cache
 
 Some information are cached for better performance. You can change cache lifetime (see [environment variable](#workflow-environment-variables)). This command flush all cache.
-
-## Known issue
-
-It's an early version
 
 ## Workflow Environment Variables
 

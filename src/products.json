@@ -15,33 +15,17 @@
     "preferences": "GoLand",
     "bin": "goland"
   },
-  "IdeaCE": {
-    "preferences": "IdeaIC",
-    "bin": "idea"
-  },
-  "IdeaIE": {
-    "preferences": "IdeaIE",
-    "bin": "idea"
-  },
-  "IdeaUE": {
+  "IntelliJIdea": {
     "preferences": "IntelliJIdea",
     "bin": "idea"
   },
   "PhpStorm": {
     "preferences": "PhpStorm",
-    "bin": "phpstorm"
+    "bin": ["phpstorm", "pstorm"]
   },
-  "PyCharmPro": {
+  "PyCharm": {
     "preferences": "PyCharm",
-    "bin": "pycharm"
-  },
-  "PyCharmCE": {
-    "preferences": "PyCharmCE",
-    "bin": "pycharm"
-  },
-  "PyCharmEdu": {
-    "preferences": "PyCharmEdu",
-    "bin": "pycharm"
+    "bin": ["pycharm", "charm"]
   },
   "Rider": {
     "preferences": "Rider",
