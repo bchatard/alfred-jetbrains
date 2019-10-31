@@ -40,6 +40,9 @@
     "husky": "3.0.9",
     "pretty-quick": "2.0.0"
   },
+  "engines": {
+    "node": "^8.12.0 || >=9.7.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
