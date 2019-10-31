@@ -27,6 +27,10 @@
     "preferences": "PyCharm",
     "bin": ["pycharm", "charm"]
   },
+  "AndroidStudio": {
+    "preferences": "AndroidStudio",
+    "bin": ["studio"]
+  },
   "Rider": {
     "preferences": "Rider",
     "bin": "rider"
