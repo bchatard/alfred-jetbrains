@@ -1,6 +1,6 @@
 {
   "name": "@bchatard/alfred-jetbrains",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Alfred3 workflow to easily open your projects with your favorite JetBrains product.",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
   "dependencies": {
     "alfy": "^0.9.0",
-    "execa": "^2.0.4",
+    "execa": "^3.2.0",
     "fast-xml-parser": "^3.12.16",
     "fuse.js": "^3.4.4",
     "which": "^2.0.1"
@@ -37,8 +37,11 @@
   },
   "devDependencies": {
     "prettier": "1.18.2",
-    "husky": "3.0.8",
-    "pretty-quick": "1.11.1"
+    "husky": "3.0.9",
+    "pretty-quick": "2.0.1"
+  },
+  "engines": {
+    "node": "^8.12.0 || >=9.7.0"
   },
   "husky": {
     "hooks": {

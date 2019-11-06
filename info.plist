@@ -164,6 +164,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>584EFEBB-D917-4516-B99C-895EB85B628F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
 		<array>
 			<dict>
@@ -1418,6 +1431,55 @@ echo ${PROJECT_NAME}</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>studio</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/index.js "$1" "AndroidStudio"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Android Studio Project</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>584EFEBB-D917-4516-B99C-895EB85B628F</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>rider</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -1698,12 +1760,19 @@ echo ${PROJECT_NAME}</string>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
-		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
+		<key>584EFEBB-D917-4516-B99C-895EB85B628F</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1230</integer>
+			<integer>1110</integer>
+		</dict>
+		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>45</integer>
+			<key>ypos</key>
+			<integer>1350</integer>
 		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<dict>
@@ -1777,9 +1846,9 @@ echo ${PROJECT_NAME}</string>
 		<key>9A5C474B-A56F-4C12-9723-079CD543C502</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>1110</integer>
+			<integer>1230</integer>
 		</dict>
 		<key>A7087DC3-4F24-4B18-BDA6-AB87DF5FEAAC</key>
 		<dict>

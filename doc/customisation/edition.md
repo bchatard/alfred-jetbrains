@@ -12,7 +12,7 @@ If you work with a different edition you need to customise this workflow.
 1. Open the workflow, and go to the workflow configuration window (the icon like this [x])
 2. Add new environment variable:
    - name: `jb_preferences_<product_key>`
-   - value: the path to your JSON file (relative to your home - ex: `/.config/alfred-jetbrains/custom.json`)
+   - value: the name of the preferences folder (see [available values](#available-preferences))
 
 ### Product keys
 

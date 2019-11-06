@@ -61,7 +61,8 @@ const getPreferencePath = product => {
   const customPrefDirName =
     process.env[`jb_preferences_${product.key.toLowerCase()}`];
   const prefDirName = customPrefDirName || product.preferences;
-  const pattern = new RegExp(`${prefDirName}([\\d]{4}\\.[\\d]{1})`); // year and dot release
+  // year and dot release or AndroidStudio version (eg: 3.5)
+  const pattern = new RegExp(`${prefDirName}(([\\d]{1}|[\\d]{4})\\.[\\d]{1})`);
   const paths = getDirectories(preferencesPath).filter(path =>
     pattern.test(path)
   );
