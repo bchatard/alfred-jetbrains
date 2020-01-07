@@ -1,4 +1,5 @@
 const alfy = require("alfy");
+const path = require("path");
 
 const projectPaths = require("./project/paths");
 const projectName = require("./project/name");
@@ -21,7 +22,8 @@ const buildItem = (product, name, projectPath) => {
     },
     variables: {
       jb_project_name: name,
-      jb_bin: product.binPath
+      jb_bin: product.binPath,
+      jb_search_basename: path.basename(projectPath)
     }
   };
 };
@@ -40,8 +42,8 @@ const getItems = product => {
   if (!cachedProjects) {
     const projects = [];
     const paths = projectPaths.get(product.preferencePath);
-    paths.forEach(path => {
-      const item = buildProductItem(product, path);
+    paths.forEach(_path => {
+      const item = buildProductItem(product, _path);
       if (item) {
         projects.push(item);
       }

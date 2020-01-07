@@ -9,7 +9,10 @@ const searchOptions = () => {
     distance: 80,
     maxPatternLength: 32,
     minMatchCharLength: 2,
-    keys: [{ name: "title", weight: 1 }, { name: "subtitle", weight: 0.5 }]
+    keys: [
+      { name: "title", weight: 1 },
+      { name: "variables.jb_search_basename", weight: 0.5 }
+    ]
   };
 
   if (process.env.jb_search_customisation_file) {

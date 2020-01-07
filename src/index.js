@@ -34,7 +34,8 @@ if (items.length) {
     } else {
       const pattern = new RegExp(query, "i");
       const search = item =>
-        pattern.test(item.title) || pattern.test(item.subtitle);
+        pattern.test(item.title) ||
+        pattern.test(item.variables.jb_search_basename);
       matchItems = alfy.matches(query, items, search);
       matchTime = new Date();
     }
