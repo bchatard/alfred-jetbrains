@@ -1,5 +1,6 @@
 const alfy = require("alfy");
 const fs = require("fs");
+const path = require("path");
 
 const searchOptions = () => {
   let fuseOptions = {
@@ -10,8 +11,8 @@ const searchOptions = () => {
     maxPatternLength: 32,
     minMatchCharLength: 2,
     keys: [
-      { name: "title", weight: 1 },
-      { name: "variables.jb_search_basename", weight: 0.5 }
+      { name: "title", weight: 0.9 },
+      { name: "variables.jb_search_basename", weight: 0.1 }
     ]
   };
 
