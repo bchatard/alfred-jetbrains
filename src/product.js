@@ -5,10 +5,10 @@ const which = require("which");
 
 const knownProducts = require("./products.json");
 
-const getDirectories = srcPath =>
+const getDirectories = (srcPath) =>
   fs
     .readdirSync(srcPath)
-    .filter(file => fs.lstatSync(path.join(srcPath, file)).isDirectory());
+    .filter((file) => fs.lstatSync(path.join(srcPath, file)).isDirectory());
 
 const getProduct = () => {
   // remove the first three entries
@@ -26,7 +26,7 @@ const getProduct = () => {
   throw new Error("Can't find product, missing key");
 };
 
-const applyCustomisation = product => {
+const applyCustomisation = (product) => {
   if (process.env.jb_product_customisation_file) {
     const customisationFilePath = path.join(
       process.env.HOME,
@@ -40,7 +40,7 @@ const applyCustomisation = product => {
         if (additionalProducts[product.key]) {
           product = {
             ...product,
-            ...additionalProducts[product.key]
+            ...additionalProducts[product.key],
           };
         }
       }
@@ -55,33 +55,49 @@ const applyCustomisation = product => {
   return product;
 };
 
-const getPreferencePath = product => {
-  const preferencesPath = `${process.env.HOME}/Library/Preferences`;
-
-  const customPrefDirName =
-    process.env[`jb_preferences_${product.key.toLowerCase()}`];
-  const prefDirName = customPrefDirName || product.preferences;
+const getPreferencePath = (product) => {
+  // see: https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs
+  const preferencesPaths = [
+    `${process.env.HOME}/Library/Application Support/JetBrains`, // >= 2020.*
+    `${process.env.HOME}/Library/Preferences`, // < 2020.*
+  ];
+  const nbPreferencesPaths = preferencesPaths.length;
+  const prefDirName =
+    process.env[`jb_preferences_${product.key.toLowerCase()}`] ||
+    product.preferences;
   // year and dot release or AndroidStudio version (eg: 3.5)
   const pattern = new RegExp(`${prefDirName}(([\\d]{1}|[\\d]{4})\\.[\\d]{1})`);
-  const paths = getDirectories(preferencesPath).filter(path =>
-    pattern.test(path)
-  );
 
-  if (paths.length === 1) {
-    return path.join(preferencesPath, paths[0]);
-  }
-  if (paths.length > 1) {
-    // sort paths in "chronological" order
-    // so last element means current product version
-    // maybe is not a good assertion
-    paths.sort();
+  let configDir = undefined;
+  for (let i = 0; i < nbPreferencesPaths; i++) {
+    const preferencesPath = preferencesPaths[i];
+    const paths = getDirectories(preferencesPath).filter((prefPath) =>
+      pattern.test(prefPath)
+    );
 
-    return path.join(preferencesPath, paths.pop());
+    if (paths.length === 1) {
+      configDir = path.join(preferencesPath, paths[0]);
+      break;
+    }
+    if (paths.length > 1) {
+      // sort paths in "chronological" order
+      // so last element means current product version
+      // maybe is not a good assertion
+      paths.sort();
+
+      configDir = path.join(preferencesPath, paths.pop());
+      break;
+    }
   }
+
+  if (configDir) {
+    return configDir;
+  }
+
   throw new Error(`Can't find preference path for ${prefDirName}`);
 };
 
-const getApplicationPath = product => {
+const getApplicationPath = (product) => {
   let bins = product.bin;
   if (!Array.isArray(bins)) {
     bins = [bins];
@@ -138,7 +154,7 @@ const get = () => {
     product.preferencePath = getPreferencePath(product);
     product.applicationPath = getApplicationPath(product);
     alfy.cache.set(cacheKey, product, {
-      maxAge: +process.env.jb_product_cache_lifetime * 1000
+      maxAge: +process.env.jb_product_cache_lifetime * 1000,
     });
 
     return product;

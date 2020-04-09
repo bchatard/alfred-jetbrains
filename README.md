@@ -56,15 +56,15 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <summary>Supported versions</summary>
 I test with this products/versions:
 
-- AppCode: 2018.3 / 2019.+;
-- CLion: 2018.3 / 2019.+;
-- DataGrip: 2018.3 / 2019.+;
-- GoLand: 2018.3 / 2019.+;
-- IntelliJ Idea: 2018.3 / 2019.+;
-- PhpStorm: 2018.3 / 2019.+;
-- PyCharm: 2018.3 / 2019.+;
-- WebStorm: 2018.3 / 2019.+;
-- RubyMine: 2018.3 / 2019.+;
+- AppCode: 2018.3 / 2019.+ / 2020.+;
+- CLion: 2018.3 / 2019.+ / 2020.+;
+- DataGrip: 2018.3 / 2019.+ / 2020.+;
+- GoLand: 2018.3 / 2019.+ / 2020.+;
+- IntelliJ Idea: 2018.3 / 2019.+ / 2020.+;
+- PhpStorm: 2018.3 / 2019.+ / 2020.+;
+- PyCharm: 2018.3 / 2019.+ / 2020.+;
+- WebStorm: 2018.3 / 2019.+ / 2020.+;
+- RubyMine: 2018.3 / 2019.+ / 2020.+;
 
 For other versions:
 
