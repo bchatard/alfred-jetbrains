@@ -39,6 +39,7 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <details>
 <summary>Default Keywords</summary>
 
+- AndroidStudio: `studio`;
 - AppCode: `appcode`;
 - CLion: `clion`;
 - DataGrip: `datagrip`;
@@ -56,6 +57,7 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <summary>Supported versions</summary>
 I test with this products/versions:
 
+- AndroidStudio: 3.+;
 - AppCode: 2018.3 / 2019.+ / 2020.+;
 - CLion: 2018.3 / 2019.+ / 2020.+;
 - DataGrip: 2018.3 / 2019.+ / 2020.+;
