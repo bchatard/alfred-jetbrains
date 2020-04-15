@@ -100,7 +100,7 @@ Some information are cached for better performance. You can change cache lifetim
 - `jb_product_cache_lifetime`: cache lifetime in seconds for "product data" (application path, bin path etc) [default: 86400 seconds]
 - `jb_project_cache_lifetime`: cache lifetime in seconds for project list (one cache per app) [default: 3600 seconds]
 - `jb_product_customisation_file`: path to JSON file for [product customisation](#customisation)
-- `jb_search_customisation_file`: path to JSON file for [search customisation](#customisation) 
+- `jb_search_customisation_file`: path to JSON file for [search customisation](#customisation)
 
 ## Changelog
 
