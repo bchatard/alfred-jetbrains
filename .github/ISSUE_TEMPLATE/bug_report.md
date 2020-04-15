@@ -7,6 +7,9 @@ assignees: bchatard
 
 ---
 
+**Check Troubleshooting first**
+[Troubleshooting](/docs/troubleshooting.md)
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
