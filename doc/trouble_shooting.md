@@ -4,10 +4,9 @@
 ---
 ## NVM
 
-- If you get this message: 'Couldn't find the `node` binaray',  
- You should create symbolic link file in `/usr/local/bin`.
-    
-    Actually I manage node using `nvm`, so I just did:  
-    ```shell  
-      sudo ln -s `which node` /usr/local/bin/node  
-    ```
+If you get this message: "Couldn't find the `node` binary".
+It's maybe du to non existing node version available globally.
+You should create symbolic link file in your PATH (eg: `/usr/local/bin`).
+```shell  
+$ sudo ln -s $(which node) /usr/local/bin/node
+\```
