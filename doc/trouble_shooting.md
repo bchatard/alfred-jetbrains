@@ -1,4 +1,4 @@
-# Trouble Shooting
+# Troubleshooting
 [NVM](#nvm)
 
 ---
