@@ -109,3 +109,4 @@ Some information are cached for better performance. You can change cache lifetim
 ## License
 
 [MIT](LICENSE) © [bchatard](https://github.com/bchatard)
+
