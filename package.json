@@ -29,7 +29,7 @@
     "alfy": "^0.9.0",
     "execa": "^3.2.0",
     "fast-xml-parser": "^3.12.16",
-    "fuse.js": "^3.4.4",
+    "fuse.js": "^5.2.3",
     "which": "^2.0.1"
   },
   "publishConfig": {
