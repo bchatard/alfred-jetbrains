@@ -142,7 +142,7 @@ const getApplicationPath = (product) => {
     return oldMatch[1];
   }
 
-  throw new Error(`Can't find application path for ${bin}`);
+  throw new Error(`Can't find application path for ${binContent}`);
 };
 
 const get = () => {
