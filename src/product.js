@@ -124,7 +124,7 @@ const getApplicationPath = (product) => {
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
-  const pattern = new RegExp('open -a "(.*)" "\\$@"');
+  const pattern = new RegExp('open -(n)?a "(.*)" (--args)? "\\$@"');
   const match = pattern.exec(binContent);
   if (match && match.length === 2) {
     let appPath = match[1];
