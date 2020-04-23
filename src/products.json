@@ -37,7 +37,7 @@
   },
   "RubyMine": {
     "preferences": "RubyMine",
-    "bin": "rubymine"
+    "bin": ["rubymine", "mine"]
   },
   "WebStorm": {
     "preferences": "WebStorm",
