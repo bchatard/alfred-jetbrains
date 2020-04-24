@@ -126,8 +126,8 @@ const getApplicationPath = (product) => {
   // Toolbox case
   const pattern = new RegExp('open -(n)?a "(.*)" (--args)? "\\$@"');
   const match = pattern.exec(binContent);
-  if (match && match.length === 2) {
-    let appPath = match[1];
+  if (match && [2, 4].includes(match.length)) {
+    let appPath = match.length === 2 ? match[1] : match[2];
     appPath = appPath.split("/");
     appPath = appPath.slice(0, -3); // remove last three entries ('Contents', 'MacOS', ${bin})
     appPath = appPath.join("/");
@@ -142,7 +142,7 @@ const getApplicationPath = (product) => {
     return oldMatch[1];
   }
 
-  throw new Error(`Can't find application path for ${binContent}`);
+  throw new Error(`Can't find application path for ${product.key}.`);
 };
 
 const get = () => {
