@@ -124,10 +124,12 @@ const getApplicationPath = (product) => {
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
-  const pattern = new RegExp('open -a "(.*)" "\\$@"');
+  const pattern = new RegExp('open -(n)?a "(.*)" (--args)? "\\$@"');
   const match = pattern.exec(binContent);
-  if (match && match.length === 2) {
-    let appPath = match[1];
+  const matchLength = match.length;
+
+  if (match && [2, 4].includes(matchLength)) {
+    let appPath = match[matchLength === 2 ? 1 : 2];
     appPath = appPath.split("/");
     appPath = appPath.slice(0, -3); // remove last three entries ('Contents', 'MacOS', ${bin})
     appPath = appPath.join("/");
@@ -142,7 +144,7 @@ const getApplicationPath = (product) => {
     return oldMatch[1];
   }
 
-  throw new Error(`Can't find application path for ${bin}`);
+  throw new Error(`Can't find application path for ${product.key}.`);
 };
 
 const get = () => {
