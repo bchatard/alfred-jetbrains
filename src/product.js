@@ -126,7 +126,7 @@ const getApplicationPath = (product) => {
   // Toolbox case
   const pattern = new RegExp('open -(n)?a "(.*)" (--args)? "\\$@"');
   const match = pattern.exec(binContent);
-  const matchLength = match.length;
+  const matchLength = match ? match.length : 0;
 
   if (match && [2, 4].includes(matchLength)) {
     let appPath = match[matchLength === 2 ? 1 : 2];
