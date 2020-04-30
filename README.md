@@ -4,6 +4,7 @@
 
 ![npm version](https://img.shields.io/npm/v/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 ![npm downloads per week](https://img.shields.io/npm/dm/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bchatard_alfred-jetbrains&metric=alert_status)](https://sonarcloud.io/dashboard?id=bchatard_alfred-jetbrains)
 
 ## Requirements
 
@@ -109,4 +110,3 @@ Some information are cached for better performance. You can change cache lifetim
 ## License
 
 [MIT](LICENSE) © [bchatard](https://github.com/bchatard)
-
