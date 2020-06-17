@@ -41,11 +41,14 @@
     "pretty-quick": "2.0.1"
   },
   "engines": {
-    "node": "^8.12.0 || >=9.7.0"
+    "node": ">=10"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "volta": {
+    "node": "10.21.0"
   }
 }

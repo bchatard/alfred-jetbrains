@@ -7,12 +7,10 @@ const minorVersion = Number(version[1]);
 
 exports.check = () => {
   if (
-    majorVersion < 8 || // at least v8
-    (majorVersion === 8 && minorVersion < 12) || // at least 8.12
-    (majorVersion === 9 && minorVersion < 7) // at least 9.7
+    majorVersion < 10 // at least v10
   ) {
     alfy.error(
-      `Wrong Node version. We need v8.12+, 9.7+ or newer, you have ${process.version}`
+      `Wrong Node version. We need v10+ or newer, you have ${process.version}`
     );
     return false;
   }

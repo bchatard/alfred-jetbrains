@@ -4,3 +4,6 @@
 
 # Nodes
 /node_modules
+
+# Misc
+/test.js

@@ -8,7 +8,7 @@
 
 ## Requirements
 
-You need [Node.js 8.12+/9.7+](https://nodejs.org) and [Alfred 3.5+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js 10+](https://nodejs.org) and [Alfred 3.5+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
