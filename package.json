@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "prettier": "2.0.5",
-    "husky": "4.2.5",
+    "husky": "4.3.0",
     "pretty-quick": "2.0.1"
   },
   "engines": {
