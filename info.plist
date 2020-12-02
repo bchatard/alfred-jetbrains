@@ -1115,19 +1115,20 @@ function jsonval {
     local json=$1
     local var_name=$2
 
-    temp=`echo $json | sed 's/\\\\\//\//g' | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i&lt;=n; i++) print a[i]}' | sed 's/\"\:\"/\|/g' | sed 's/[\,]/ /g' | sed 's/\"//g' | grep -w $var_name`
-    echo ${temp##*|} | cut -d":" -f2 | tr -d "'"
+    temp=$(echo "$json" | sed 's/\\\\\//\//g' | sed 's/[{}]//g' | awk -v k="text" '{n=split($0,a,","); for (i=1; i&lt;=n; i++) print a[i]}' | sed 's/\"\:\"/\|/g' | sed 's/[\,]/ /g' | sed 's/\"//g' | grep -w "$var_name")
+    echo "${temp##*|}" | cut -d":" -f2 | tr -d "'"
 }
 
-
 QUERY="{query}"
-BIN=`jsonval $QUERY 'jb_bin'`
-PROJECT_NAME=`jsonval $QUERY 'jb_project_name'`
-PROJECT_PATH=`jsonval $QUERY 'arg'`
+BIN=$(jsonval $QUERY 'jb_bin')
+PROJECT_NAME=$(jsonval $QUERY 'jb_project_name')
 
-eval "${BIN} ${PROJECT_PATH}"
+#Using sed to properly escape spaces in the PROJECT_PATH
+PROJECT_PATH=$(jsonval "$QUERY" 'arg' | sed 's: :\\ :g' | sed -e 's:\\ : :1')
 
-echo ${PROJECT_NAME}</string>
+eval "${BIN}" "${PROJECT_PATH}"
+
+echo "${PROJECT_NAME}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
