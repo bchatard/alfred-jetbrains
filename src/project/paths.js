@@ -47,7 +47,8 @@ const getProjectPaths = (productPath) => {
             ? application.component.option
             : [];
         // 2020.3+
-        if (typeof options === "object") {
+        if (!Array.isArray(options)) {
+          // if there are no project groups defined,
           // there is only one entry in 2020.3+, so we change it into array
           options = [options];
         }
