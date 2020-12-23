@@ -125,7 +125,7 @@ const getApplicationPath = (product) => {
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
-  const pattern = new RegExp('open -(n)?a "(.*)"( --args)? "\\$@"');
+  const pattern = new RegExp('open\\s-(n)?a\\s"(.*)"(?:\\s\\$wait)?(\\s--args)\\s"\\$(?:{ideargs\\[)?@(?:]})?"');
   const match = pattern.exec(binContent);
   const matchLength = match ? match.length : 0;
 
