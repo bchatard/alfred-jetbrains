@@ -28,7 +28,7 @@
   "dependencies": {
     "alfy": "^0.10.0",
     "execa": "^5.0.0",
-    "fast-xml-parser": "^3.12.16",
+    "fast-xml-parser": "^3.17.6",
     "fuse.js": "^3.4.4",
     "which": "^2.0.1"
   },
