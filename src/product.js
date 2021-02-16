@@ -72,9 +72,15 @@ const getPreferencePath = (product) => {
   let configDir = undefined;
   for (let i = 0; i < nbPreferencesPaths; i++) {
     const preferencesPath = preferencesPaths[i];
-    const paths = getDirectories(preferencesPath).filter((prefPath) =>
-      pattern.test(prefPath)
-    );
+    let paths = [];
+    try {
+      paths = getDirectories(preferencesPath).filter((prefPath) =>
+        pattern.test(prefPath)
+      );
+    } catch (e) {
+      // error in getDirectories du to missing preferencesPath, die silently
+      break;
+    }
 
     if (paths.length === 1) {
       configDir = path.join(preferencesPath, paths[0]);
@@ -125,7 +131,9 @@ const getApplicationPath = (product) => {
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
-  const pattern = new RegExp('open\\s-(n)?a\\s"(.*)"(?:\\s\\$wait)?(\\s--args)\\s"\\$(?:{ideargs\\[)?@(?:]})?"');
+  const pattern = new RegExp(
+    'open\\s-(n)?a\\s"(.*)"(?:\\s\\$wait)?(\\s--args)\\s"\\$(?:{ideargs\\[)?@(?:]})?"'
+  );
   const match = pattern.exec(binContent);
   const matchLength = match ? match.length : 0;
 
