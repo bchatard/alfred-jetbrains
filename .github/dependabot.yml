@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - bchatard
+  ignore:
+  - dependency-name: husky
+    versions:
+    - 4.3.8
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.2.0
+  - dependency-name: fast-xml-parser
+    versions:
+    - 3.17.6
