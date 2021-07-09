@@ -41,6 +41,6 @@
   },
   "WebStorm": {
     "preferences": "WebStorm",
-    "bin": "webstorm"
+    "bin": ["webstorm", "ws"]
   }
 }
