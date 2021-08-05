@@ -71,7 +71,7 @@ const getPreferencePath = (product) => {
 
   let configDir = undefined;
   for (let i = 0; i < nbPreferencesPaths; i++) {
-    const preferencesPath = preferencesPaths[i];
+    const preferencesPath = path.resolve(preferencesPaths[i]);
     let paths = [];
     try {
       paths = getDirectories(preferencesPath).filter((prefPath) =>
