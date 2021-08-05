@@ -76,14 +76,23 @@ const getProjectPaths = (productPath) => {
         const application = content.application;
         const options =
           application.component &&
-          application.component["@_name"] === "RecentDirectoryProjectsManager"
+          application.component["@_name"] === "RiderRecentProjectsManager"
             ? application.component.option
             : [];
         const recentPathOptions = options.find((option) => {
           return option["@_name"] === "recentPaths";
         });
-
-        return recentPathOptions ? recentPathOptions.list.option : [];
+        if (recentPathOptions) {
+          return recentPathOptions.list.option;
+        }
+        // 2020.3+
+        const entries = options.find((option) => {
+          return option["@_name"] === "additionalInfo";
+        });
+        if (entries) {
+          return entries.map.entry;
+        }
+        return [];
       }
       return false;
     },
