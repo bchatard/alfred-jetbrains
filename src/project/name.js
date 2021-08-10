@@ -72,6 +72,12 @@ const getProductName = projectPath => {
 
       return false;
     },
+    viaSolution: () => {
+      let pathParts = projectPath.split('/');
+      let solutionName = pathParts[pathParts.length-1];
+      solutionName = solutionName.replace(".sln", "");
+      return solutionName;
+    },
     // fallback case, keep it in last position
     viaDirectoryName: () => {
       if (!isIdeaDirExists) {
