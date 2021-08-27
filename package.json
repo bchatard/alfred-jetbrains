@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
   "dependencies": {
-    "alfy": "^0.11.0",
+    "alfy": "^0.12.0",
     "execa": "^5.0.0",
     "fast-xml-parser": "^3.12.16",
     "fuse.js": "^3.4.4",
