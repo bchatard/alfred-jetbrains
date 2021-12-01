@@ -1,6 +1,6 @@
-const alfy = require("alfy");
-const fs = require("fs");
-const path = require("path");
+import alfy from "alfy";
+import fs from "fs";
+import path from "path";
 
 const searchOptions = () => {
   let fuseOptions = {
@@ -42,4 +42,4 @@ const searchOptions = () => {
   return fuseOptions;
 };
 
-exports.get = searchOptions;
+export default searchOptions;

@@ -1,34 +1,35 @@
-const alfy = require("alfy");
+import alfy from "alfy";
+import checkVersion from "./checkVersion.js";
 
 // check node version
-if (!require("./version_checker").check()) {
-  return;
+if (!checkVersion()) {
+  alfy.error('return;')
 }
 
-const debug = require("./debug");
-const fuseEngine = require("fuse.js");
+import fuseEngine from "fuse.js";
+import {addTimeItem} from "./debug.js";
+import {getItems} from "./project.js";
+import findProduct from "./findProduct.js";
+import searchOptions from "./searchOptions.js";
 
 const startTime = new Date();
-
-const product = require("./product").get();
+const product = findProduct();
 const productTime = new Date();
-const project = require("./project");
 
 const query = alfy.input;
 
-const items = project.getItems(product);
+const items = getItems(product);
 const projectsTime = new Date();
 
-debug.addTimeItem(items, `Retrieve Product: ${productTime - startTime}ms`);
-debug.addTimeItem(items, `Retrieve Projects: ${projectsTime - productTime}ms`);
+addTimeItem(items, `Retrieve Product: ${productTime - startTime}ms`);
+addTimeItem(items, `Retrieve Projects: ${projectsTime - productTime}ms`);
 
 if (items.length) {
   if (query) {
     let matchItems = [];
     let matchTime;
     if (process.env.jb_enhanced_search) {
-      const searchOptions = require("./search");
-      const fuse = new fuseEngine(items, searchOptions.get());
+      const fuse = new fuseEngine(items, searchOptions());
       matchItems = fuse.search(query);
       matchTime = new Date();
     } else {
@@ -40,7 +41,7 @@ if (items.length) {
       matchTime = new Date();
     }
 
-    debug.addTimeItem(
+    addTimeItem(
       matchItems,
       `Match Projects: ${matchTime - projectsTime}ms`
     );

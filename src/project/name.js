@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const execa = require("execa");
+import fs from "fs";
+import path from "path";
+import {execaCommandSync} from "execa";
 
 const workspaceXpath = [
   "(//component[@name='ProjectView']/panes/pane[@id='ProjectPane']/subPane/PATH/PATH_ELEMENT/option/@value)[1]",
@@ -18,7 +18,7 @@ const ideaDirExists = projectPath => {
   return fs.existsSync(ideaPath) && fs.lstatSync(ideaPath).isDirectory();
 };
 
-const getProductName = projectPath => {
+const getProjectName = projectPath => {
   let isIdeaDirExists = false;
 
   const cases = {
@@ -54,7 +54,7 @@ const getProductName = projectPath => {
       }
 
       for (const xpath of workspaceXpath) {
-        const result = execa.commandSync(
+        const result = execaCommandSync(
           `xmllint --xpath "${xpath}" workspace.xml`,
           { reject: false }
         );
@@ -103,4 +103,4 @@ const getProductName = projectPath => {
   return false;
 };
 
-exports.get = getProductName;
+export default getProjectName;

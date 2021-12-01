@@ -1,4 +1,4 @@
-{
+export default {
   "AppCode": {
     "preferences": "AppCode",
     "bin": "appcode"

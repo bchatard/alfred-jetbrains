@@ -8,7 +8,7 @@
 
 ## Requirements
 
-You need [Node.js 10+](https://nodejs.org) and [Alfred 3.5+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js 14+](https://nodejs.org) and [Alfred 4.6+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
@@ -18,7 +18,7 @@ This workflow need one of JetBrains products (**2019.1+**), and its [shell scrip
 $ npm install -g @bchatard/alfred-jetbrains
 ```
 
-Thanks to [Alfy](https://github.com/sindresorhus/alfy) and [alfred-notifier](https://github.com/SamVerschueren/alfred-notifier), you will be notify when a new version is available.
+Thanks to [Alfy](https://github.com/sindresorhus/alfy) and [alfred-notifier](https://github.com/SamVerschueren/alfred-notifier), you will be notified when a new version is available.
 
 You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-updater) to update all your "Alfy Workflow".
 
@@ -49,7 +49,7 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 - PhpStorm: `pstorm`;
 - PyCharm: `pycharm` (default to Professional Edition, see [customisation to change this](#customisation));
 - WebStorm: `wstorm`;
-- Rider: [Help wanted](https://github.com/bchatard/alfred-jetbrains/issues/5);
+- Rider: `rider`;
 - RubyMine: `rubymine`;
 
 </details>
@@ -72,7 +72,7 @@ I test with this products/versions:
 For other versions:
 
 - Very old PhpStorm (and only PhpStorm), you can use my first workflow: [PhpStorm Alfred Workflow](https://github.com/bchatard/phpstorm-alfred-workflow)
-- Prior 2019, you can use my previous workflow: [JetBrains Alfred Workflow](https://github.com/bchatard/jetbrains-alfred-workflow)
+- Prior to 2019, you can use my previous workflow: [JetBrains Alfred Workflow](https://github.com/bchatard/jetbrains-alfred-workflow)
 
 </details>
 

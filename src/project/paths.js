@@ -1,5 +1,5 @@
-const fs = require("fs");
-const fxp = require("fast-xml-parser/src/parser");
+import fs from "fs";
+import fxp from "fast-xml-parser/src/parser.js";
 
 const fxpOptions = {
   ignoreAttributes: false,
@@ -132,4 +132,4 @@ const getProjectPaths = (productPath) => {
   throw new Error(`Can't find 'options' XML in ${productPath}`);
 };
 
-exports.get = getProjectPaths;
+export default getProjectPaths;

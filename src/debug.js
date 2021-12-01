@@ -1,9 +1,7 @@
-const alfy = require("alfy");
+import alfy from "alfy";
 
-const addTimeItem = (items, title) => {
+export function addTimeItem(items, title) {
   if (alfy.debug) {
     items.push({ title, icon: { path: alfy.icon.get("Clock") } });
   }
-};
-
-exports.addTimeItem = addTimeItem;
+}

@@ -1,10 +1,18 @@
-const alfy = require("alfy");
-const path = require("path");
+import alfy from "alfy";
+import path from "path";
 
-const projectPaths = require("./project/paths");
-const projectName = require("./project/name");
+import getProjectPaths from "./project/paths.js";
+import getProjectName from "./project/name.js";
 
-const buildItem = (product, name, projectPath) => {
+const buildProductItem = (product, projectPath) => {
+  const name = getProjectName(projectPath);
+  if (name) {
+    return buildItem(product, name, projectPath);
+  }
+  return false;
+};
+
+export function buildItem(product, name, projectPath) {
   return {
     uid: name,
     title: name,
@@ -26,22 +34,14 @@ const buildItem = (product, name, projectPath) => {
       jb_search_basename: path.basename(projectPath)
     }
   };
-};
+}
 
-const buildProductItem = (product, projectPath) => {
-  const name = projectName.get(projectPath);
-  if (name) {
-    return buildItem(product, name, projectPath);
-  }
-  return false;
-};
-
-const getItems = product => {
+export function getItems(product) {
   const cacheKey = `projects.${product.key}`;
   const cachedProjects = alfy.cache.get(cacheKey);
   if (!cachedProjects) {
     const projects = [];
-    const paths = projectPaths.get(product.preferencePath);
+    const paths = getProjectPaths(product.preferencePath);
     paths.forEach(_path => {
       const item = buildProductItem(product, _path);
       if (item) {
@@ -55,7 +55,4 @@ const getItems = product => {
     return projects;
   }
   return cachedProjects;
-};
-
-exports.getItems = getItems;
-exports.buildItem = buildItem;
+}

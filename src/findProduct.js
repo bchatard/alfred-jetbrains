@@ -1,9 +1,9 @@
-const alfy = require("alfy");
-const fs = require("fs");
-const path = require("path");
-const which = require("which");
+import alfy from "alfy";
+import fs from "fs";
+import path from "path";
+import which from "which";
 
-const knownProducts = require("./products.json");
+import knownProducts from "./products.js";
 
 const getDirectories = (srcPath) =>
   fs
@@ -156,7 +156,7 @@ const getApplicationPath = (product) => {
   throw new Error(`Can't find application path for ${product.key}.`);
 };
 
-const get = () => {
+const findProduct = () => {
   let product = getProduct();
   const cacheKey = `product.${product.key}`;
   const cachedProduct = alfy.cache.get(cacheKey);
@@ -174,4 +174,4 @@ const get = () => {
   return cachedProduct;
 };
 
-exports.get = get;
+export default findProduct;

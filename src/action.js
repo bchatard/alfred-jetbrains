@@ -1,4 +1,4 @@
-const alfy = require("alfy");
+import alfy from "alfy";
 
 const action = alfy.input;
 

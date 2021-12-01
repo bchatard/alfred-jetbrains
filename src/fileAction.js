@@ -1,12 +1,15 @@
-const alfy = require("alfy");
-const buildItem = require("./project").buildItem;
+import alfy from "alfy";
+import {buildItem} from "./project.js";
 
 // check node version// check node version
-if (!require("./version_checker").check()) {
+import checkVersion from "./checkVersion.js";
+import findProduct from "./findProduct.js";
+
+if (!checkVersion()) {
   return;
 }
 
-const product = require("./product").get();
+const product = findProduct();
 const query = alfy.input;
 const projectName = query.split("/").pop();
 
