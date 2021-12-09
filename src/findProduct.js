@@ -79,7 +79,7 @@ const getPreferencePath = (product) => {
       );
     } catch (e) {
       // error in getDirectories du to missing preferencesPath, die silently
-      break;
+      continue;
     }
 
     if (paths.length === 1) {
