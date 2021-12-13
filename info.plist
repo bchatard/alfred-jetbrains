@@ -561,6 +561,8 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>action</key>
@@ -603,7 +605,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -669,7 +671,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -834,7 +836,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -851,7 +853,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -942,7 +944,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -1063,6 +1065,8 @@
 	BIN=${jb_bin}
 	PROJECT_NAME=${jb_project_name}
 
+	source ~/.zshrc
+
 	$(${BIN} "${QUERY}")
 
     echo ${PROJECT_NAME}
@@ -1126,6 +1130,8 @@ PROJECT_NAME=$(jsonval $QUERY 'jb_project_name')
 #Using sed to properly escape spaces in the PROJECT_PATH
 PROJECT_PATH=$(jsonval "$QUERY" 'arg' | sed 's: :\\ :g' | sed -e 's:\\ : :1')
 
+source ~/.zshrc
+
 eval "${BIN}" "${PROJECT_PATH}"
 
 echo "${PROJECT_NAME}"</string>
@@ -1147,7 +1153,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -1238,7 +1244,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -1378,7 +1384,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -1468,6 +1474,48 @@ echo "${PROJECT_NAME}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>rider</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+./node_modules/.bin/run-node src/fileAction.js "$1" "Rider"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F937E115-1982-4A0B-BBAF-36FFC7E145A4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1518,49 +1566,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>rider</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "Rider"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F937E115-1982-4A0B-BBAF-36FFC7E145A4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
