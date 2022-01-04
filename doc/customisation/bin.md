@@ -5,7 +5,7 @@ This workflow is shipped with "default" `bin` name for the different product. Bu
 ### How-to
 
 1. Create a JSON file somewhere (in your home folder)
-2. This JSON file need to follow the same structure of the _[original configuration file](https://github.com/bchatard/alfred-jetbrains/blob/master/src/products.json)_ (same key).
+2. This JSON file need to follow the same structure of the _[original configuration file](https://github.com/bchatard/alfred-jetbrains/blob/main/src/products.js)_ (same key).
 3. Open the workflow, and go to the workflow configuration window (the icon like this [x])
 4. Add new environment variable:
    - name: `jb_product_customisation_file`
