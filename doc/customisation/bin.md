@@ -1,24 +1,18 @@
 # Customise `bin` name
 
-This workflow is shipped with "default" `bin` name for the different product. But if you change this default `bin`name, you need to update the workflow configuration.
+This workflow by default uses keywords which are the default `bin` names of each Jetbrains product.
+E.g. an IDEA default `bin` name is `idea`, hence that's how you invoke it via Alfred.
+If you want to use a different keyword for each app then you need to change the workflow configuration.
 
 ### How-to
 
-1. Create a JSON file somewhere (in your home folder)
-2. This JSON file need to follow the same structure of the _[original configuration file](https://github.com/bchatard/alfred-jetbrains/blob/master/src/products.json)_ (same key).
-3. Open the workflow, and go to the workflow configuration window (the icon like this [x])
-4. Add new environment variable:
-   - name: `jb_product_customisation_file`
-   - value: the path to your JSON file (relative to your home - ex: `/.config/alfred-jetbrains/custom.json`)
+Open workflow settings and change the keyword for each application you want to customize.
+In this example the IDEA keyword is changed from the default `idea` to `i`.
 
-Examples:
-
-- Change `bin` name for PhpStorm
-
-```json
-{
-  "PhpStorm": {
-    "bin": ["pstorm"]
-  }
-}
-```
+![1](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![2](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![3](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![4](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![5](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![6](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
+![7](https://raw.githubusercontent.com/bchatard/alfred-jetbrains/main/doc/customization/img/1.png)
