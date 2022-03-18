@@ -1,5 +1,5 @@
 import fs from "fs";
-import fxp from "fast-xml-parser/src/parser.js";
+import {XMLParser} from "fast-xml-parser";
 
 const fxpOptions = {
   ignoreAttributes: false,
@@ -11,7 +11,7 @@ const getContent = (xmlFile) => {
   }
   const xmlContent = fs.readFileSync(xmlFile);
 
-  return fxp.parse(xmlContent.toString(), fxpOptions);
+  return new XMLParser(fxpOptions).parse(xmlContent.toString());
 };
 
 const getProjectPaths = (productPath) => {
