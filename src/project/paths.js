@@ -129,7 +129,7 @@ const getProjectPaths = (productPath) => {
     }
   }
 
-  throw new Error(`Can't find 'options' XML in ${productPath}`);
+  throw new Error(`Can't find 'options' XML in ${productPath}. Did you create some projects?`);
 };
 
 export default getProjectPaths;
