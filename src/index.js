@@ -6,7 +6,7 @@ if (!checkVersion()) {
   alfy.error('return;')
 }
 
-import fuseEngine from "fuse.js";
+import Fuse from "fuse.js";
 import {addTimeItem} from "./debug.js";
 import {getItems} from "./project.js";
 import findProduct from "./findProduct.js";
@@ -29,7 +29,7 @@ if (items.length) {
     let matchItems = [];
     let matchTime;
     if (process.env.jb_enhanced_search) {
-      const fuse = new fuseEngine(items, searchOptions());
+      const fuse = new Fuse(items, searchOptions());
       matchItems = fuse.search(query);
       matchTime = new Date();
     } else {
