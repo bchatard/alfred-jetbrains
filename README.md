@@ -1,6 +1,6 @@
 # JetBrains: Open project
 
-**Alfred3** & **Alfred4** workflow to easily open your projects with your favorite JetBrains product.
+**Alfred4** workflow to easily open your projects with your favorite JetBrains product.
 
 ![npm version](https://img.shields.io/npm/v/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 ![npm downloads per week](https://img.shields.io/npm/dm/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
@@ -11,6 +11,16 @@
 You need [Node.js 14+](https://nodejs.org) and [Alfred 4.6+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
+
+## About issues
+
+It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
+* macOS 12.3
+* Node 14, managed by [Volta](https://volta.sh/)
+* Alfred 4 (latest available)
+
+Please check the [troubleshooting guide](doc/troubleshooting.md) first, and other issues.
+And please follow the issue template for bug report 🙏
 
 ## Installation / Update
 

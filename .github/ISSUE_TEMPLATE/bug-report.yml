@@ -1,0 +1,95 @@
+name: Bug Report
+description: Report something working incorrectly
+labels: [bug]
+assignees:
+  - bchatard
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+    id: faq
+    attributes:
+      label: FAQ
+      description: Please double check that this isn't in [troubleshooting guide](https://github.com/bchatard/alfred-jetbrains/blob/main/doc/troubleshooting.md) or other issues.
+      options:
+        - label: Yes, my issue is not listed in [troubleshooting guide](https://github.com/bchatard/alfred-jetbrains/blob/main/doc/troubleshooting.md).
+          required: true
+        - label: Yes, my issue is not listed in other issues.
+          required: true
+  - type: textarea
+    id: bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: >
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: false
+  - type: input
+    id: alfred-version
+    attributes:
+      label: Alfred Version
+      description: What version of Alfred are you using?
+    validations:
+      required: true
+  - type: input
+    id: node-version
+    attributes:
+      label: Node Version
+      description: >
+        What version of node.js were you using? (Only applicable to CLI and node) (Note: the minimum Node version we support is 14.18.2)
+    validations:
+      required: true
+  - type: input
+    id: npm-version
+    attributes:
+      label: NPM Version
+      description: What version of NPM were you using?
+    validations:
+      required: true
+  - type: input
+    id: jetbrains-version
+    attributes:
+      label: Jetbrains Product & Version
+      description: Which product and his version are yuo using?
+    validations:
+      required: true
+  - type: dropdown
+    id: installation-type
+    attributes:
+      label: Installation type
+      description: How did you install your product?
+      multiple: false
+      options:
+        - Classic via .dmg
+        - Homebrew
+        - JetBrains ToolBox
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      description: What version of macOS are you using?
+      value: macOS 12.3
+    validations:
+      required: false
