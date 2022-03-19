@@ -30,7 +30,7 @@ if (items.length) {
     let matchTime;
     if (process.env.jb_enhanced_search) {
       const fuse = new Fuse(items, searchOptions());
-      matchItems = fuse.search(query);
+      matchItems = fuse.search(query).map(matchedItem => matchedItem.item);
       matchTime = new Date();
     } else {
       const pattern = new RegExp(query, "i");
