@@ -67,7 +67,7 @@ const getPreferencePath = (product) => {
     process.env[`jb_preferences_${product.key.toLowerCase()}`] ||
     product.preferences;
   // year and dot release or AndroidStudio version (eg: 3.5)
-  const pattern = new RegExp(`${prefDirName}(([\\d]{1}|[\\d]{4})\\.[\\d]{1})`);
+  const pattern = new RegExp(`${prefDirName}(([\\d]{1}|[\\d]{4})\\.[\\d]{1}$)`);
 
   let configDir = undefined;
   for (let i = 0; i < nbPreferencesPaths; i++) {
