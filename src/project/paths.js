@@ -74,11 +74,16 @@ const getProjectPaths = (productPath) => {
       const content = getContent(`${productPath}/options/recentSolutions.xml`);
       if (content) {
         const application = content.application;
-        const options =
+        let options =
           application.component &&
           application.component["@_name"] === "RiderRecentProjectsManager"
             ? application.component.option
             : [];
+        if (!Array.isArray(options)) {
+          // if there are no project groups defined,
+          // there is only one entry in 2020.3+, so we change it into array
+          options = [options];
+        }
         const recentPathOptions = options.find((option) => {
           return option["@_name"] === "recentPaths";
         });
