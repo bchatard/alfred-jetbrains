@@ -1,6 +1,6 @@
 {
   "name": "@bchatard/alfred-jetbrains",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "Alfred3 workflow to easily open your projects with your favorite JetBrains product.",
   "exports": "./src/index.js",
   "type": "module",
