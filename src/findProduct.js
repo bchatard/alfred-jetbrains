@@ -5,10 +5,16 @@ import which from "which";
 
 import knownProducts from "./products.js";
 
+const isDirectoryOrSymlink = (srcPath, file) => {
+  const fullPath = path.join(srcPath, file);
+  const ls = fs.lstatSync(fullPath);
+  return ls.isDirectory() || (ls.isSymbolicLink() && fs.lstatSync(fs.realpathSync(fullPath)).isDirectory());
+}
+
 const getDirectories = (srcPath) =>
   fs
     .readdirSync(srcPath)
-    .filter((file) => fs.lstatSync(path.join(srcPath, file)).isDirectory());
+    .filter((file) => isDirectoryOrSymlink(srcPath, file));
 
 const getProduct = () => {
   // remove the first three entries
