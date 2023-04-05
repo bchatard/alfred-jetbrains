@@ -111,13 +111,16 @@ const getPreferencePath = (product) => {
 };
 
 const getApplicationPath = (product) => {
+  const toolboxScriptPath = `${process.env.HOME}/Library/Application Support/JetBrains/Toolbox/scripts`; // >= 2022.*
+  const path = `${process.env.PATH}:${toolboxScriptPath}`;
+
   let bins = product.bin;
   if (!Array.isArray(bins)) {
     bins = [bins];
   }
   let binPath = null;
   for (const bin of bins) {
-    binPath = which.sync(bin, { nothrow: true });
+    binPath = which.sync(bin, { nothrow: true, path: path });
     // is not null and path length is greater than bin length (weird case)
     if (binPath !== null && binPath.length > bin.length) {
       break;
