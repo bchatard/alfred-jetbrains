@@ -137,6 +137,10 @@ const getApplicationPath = (product) => {
 
   product.binPath = binPath;
 
+  if (binPath.indexOf(".app")) {
+    return binPath.substring(0, binPath.lastIndexOf(".app") + 4);
+  }
+
   const binContent = fs.readFileSync(product.binPath, { encoding: "UTF-8" });
 
   // Toolbox case
