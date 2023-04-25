@@ -1,6 +1,6 @@
 # JetBrains: Open project
 
-**Alfred4** workflow to easily open your projects with your favorite JetBrains product.
+**Alfred5** workflow to easily open your projects with your favorite JetBrains product.
 
 ![npm version](https://img.shields.io/npm/v/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
 ![npm downloads per week](https://img.shields.io/npm/dm/@bchatard/alfred-jetbrains.svg?style=for-the-badge)
@@ -8,16 +8,16 @@
 
 ## Requirements
 
-You need [Node.js 14+](https://nodejs.org) and [Alfred 4.6+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js 14+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
 ## About issues
 
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
-* macOS 12.3
-* Node 14, managed by [Volta](https://volta.sh/)
-* Alfred 4 (latest available)
+* macOS 13.3
+* Alfred 5 (latest available)
+* at least Node 14, but not really important, node is only required to install this workflow
 
 Please check the [troubleshooting guide](doc/troubleshooting.md) first, and other issues.
 And please follow the issue template for bug report 🙏
@@ -28,17 +28,13 @@ And please follow the issue template for bug report 🙏
 $ npm install -g @bchatard/alfred-jetbrains
 ```
 
-Thanks to [Alfy](https://github.com/sindresorhus/alfy) and [alfred-notifier](https://github.com/SamVerschueren/alfred-notifier), you will be notified when a new version is available.
-
-You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-updater) to update all your "Alfy Workflow".
-
 ### Init shell script
 
 - Via JetBrains Toolbox:
   - Open the JetBrains Toolbox window, and then click on the parameter icon;
   - In the following form, enable _Generate shell scripts_, and set a path for script
   - More info: [Toolbox App 1.11: What’s New.](https://blog.jetbrains.com/blog/2018/08/23/toolbox-app-1-11-whats-new/)
-- Via Product
+- Via Product (removed since 2023.x)
   ![Create Command-line Launcher](./doc/img/command_line_launcher.gif)
 
 ## How to use
@@ -51,7 +47,7 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 <summary>Default Keywords</summary>
 
 - AndroidStudio: `studio`;
-- AppCode: `appcode`;
+- AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
 - CLion: `clion`;
 - DataGrip: `datagrip`;
 - GoLand: `goland`;
@@ -66,18 +62,18 @@ You can also install [alfred-updater](https://github.com/SamVerschueren/alfred-u
 
 <details>
 <summary>Supported versions</summary>
-I test with this products/versions:
+I test with these products/versions:
 
-- AndroidStudio: 3.+;
-- AppCode: 2018.3 / 2019.+ / 2020.+;
-- CLion: 2018.3 / 2019.+ / 2020.+;
-- DataGrip: 2018.3 / 2019.+ / 2020.+;
-- GoLand: 2018.3 / 2019.+ / 2020.+;
-- IntelliJ Idea: 2018.3 / 2019.+ / 2020.+;
-- PhpStorm: 2018.3 / 2019.+ / 2020.+;
-- PyCharm: 2018.3 / 2019.+ / 2020.+;
-- WebStorm: 2018.3 / 2019.+ / 2020.+;
-- RubyMine: 2018.3 / 2019.+ / 2020.+;
+- AndroidStudio: since 3.+;
+- AppCode: since 2018.3;
+- CLion: since 2018.3;
+- DataGrip: since 2018.3;
+- GoLand: since 2018.3;
+- IntelliJ Idea: since 2018.3;
+- PhpStorm: since 2018.3;
+- PyCharm: since 2018.3;
+- WebStorm: since 2018.3;
+- RubyMine: since 2018.3;
 
 For other versions:
 
@@ -94,24 +90,6 @@ For other versions:
 Some of JetBrains product are available in different editions (ex: PyCharm - Professional, Edu & Community).
 In that case they share the same `bin` / `keyword`, so you need to customise the _Preferences_ folder to retrieve your projects.
 
-- [Search](doc/customisation/search.md)
-
-A search engine is used to retrieve relevant project. For some use cases, the default configuration is not optimal for you.
-
-## JetBrains Actions
-
-With keyword `jb` you can access to some actions for this workflow.
-
-### Clean Projects Cache
-
-Some information are cached for better performance. You can change cache lifetime (see [environment variable](#workflow-environment-variables)). This command flush all cache.
-
-## Workflow Environment Variables
-
-- `jb_product_cache_lifetime`: cache lifetime in seconds for "product data" (application path, bin path etc) [default: 86400 seconds]
-- `jb_project_cache_lifetime`: cache lifetime in seconds for project list (one cache per app) [default: 3600 seconds]
-- `jb_product_customisation_file`: path to JSON file for [product customisation](#customisation)
-- `jb_search_customisation_file`: path to JSON file for [search customisation](#customisation)
 
 ## Changelog
 
