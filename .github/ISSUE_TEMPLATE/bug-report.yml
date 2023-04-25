@@ -52,6 +52,13 @@ body:
     validations:
       required: true
   - type: input
+    id: workflow-version
+    attributes:
+      label: Workflow Version
+      description: What version of this workflow are you using?
+    validations:
+      required: true
+  - type: input
     id: node-version
     attributes:
       label: Node Version
@@ -90,6 +97,6 @@ body:
     attributes:
       label: OS
       description: What version of macOS are you using?
-      value: macOS 12.3
+      value: macOS 13.3
     validations:
       required: false

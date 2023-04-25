@@ -2,11 +2,11 @@
   "name": "@bchatard/alfred-jetbrains",
   "version": "1.9.8",
   "description": "Alfred 5 workflow to easily open your projects with your favorite JetBrains product.",
-  "exports": "./src/index.js",
+  "exports": "./bin/alfred_jetbrains_cli",
   "type": "module",
   "scripts": {
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
+    "postinstall": "./bin/alfred_jetbrains_cli install",
+    "preuninstall": "echo \"Error: TODO\" && exit 0",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
@@ -29,9 +29,7 @@
     "url": "https://github.com/bchatard/alfred-jetbrains/issues"
   },
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
-  "dependencies": {
-    "alfy": "^1.0.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },

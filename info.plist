@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1048003F-FD09-4F66-883A-946C63FB3F25</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>12F443E9-CD70-4BCB-A2C9-31292B173AD8</key>
 		<array>
 			<dict>
@@ -229,32 +216,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7C053716-F85B-468D-91F1-BFF99D725AFA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1048003F-FD09-4F66-883A-946C63FB3F25</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7D2F004D-E2B0-4799-AF18-2FC32E69C362</key>
 		<array>
 			<dict>
@@ -312,6 +273,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AE8805DA-8F94-4417-87ED-2AF74E5A1387</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -477,105 +451,16 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Brice CHATARD</string>
+	<key>description</key>
+	<string>Alfred 5 workflow to easily open your projects with your favorite JetBrains product.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>JetBrains - Open Project - v3</string>
+	<string>JetBrains - Open Project</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Clean Projects Cache","arg":"cache:clean","subtitle":"for all products"}]</string>
-				<key>keyword</key>
-				<string>jb</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>JetBrains Actions</string>
-				<key>title</key>
-				<string>JetBrains Actions</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>78F02C95-38A7-4977-8A68-610BAFBEB137</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/action.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1048003F-FD09-4F66-883A-946C63FB3F25</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Action {var:action}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>action</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7C053716-F85B-468D-91F1-BFF99D725AFA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -622,9 +507,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -646,7 +531,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "AppCode"</string>
+				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -656,7 +541,7 @@
 				<key>title</key>
 				<string>Open AppCode Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -688,9 +573,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -712,7 +597,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "CLion"</string>
+				<string>./bin/alfred_jetbrains_cli search --product cLion</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -722,7 +607,7 @@
 				<key>title</key>
 				<string>Open CLion Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -787,9 +672,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -811,7 +696,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "DataGrip"</string>
+				<string>./bin/alfred_jetbrains_cli search --product dataGrip</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -821,7 +706,7 @@
 				<key>title</key>
 				<string>Open DataGrip Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -895,9 +780,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -919,7 +804,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "GoLand"</string>
+				<string>./bin/alfred_jetbrains_cli search --product goLand</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -929,7 +814,7 @@
 				<key>title</key>
 				<string>Open GoLand Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -961,9 +846,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -985,7 +870,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "IntelliJIdea"</string>
+				<string>./bin/alfred_jetbrains_cli search --product intelliJIdeaUltimate</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -995,7 +880,7 @@
 				<key>title</key>
 				<string>Open IntelliJIdea Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1034,6 +919,41 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>script</key>
+				<string>if [[ -n "{query}" ]]; then
+	QUERY="{query}"
+	BIN=${jb_bin}
+	PROJECT_NAME=${jb_project_name}
+	if [[ "${jb_is_new_bin}" == "1" ]]; then
+		open -na "${BIN}" --args "${QUERY}"
+	else
+		$(${BIN} "${QUERY}")
+	fi
+
+
+    echo "${PROJECT_NAME}"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1051,39 +971,6 @@
 			<string>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>126</integer>
-				<key>script</key>
-				<string>if [[ -n "{query}" ]]; then
-	QUERY="{query}"
-	BIN=${jb_bin}
-	PROJECT_NAME=${jb_project_name}
-
-	source ~/.zshrc
-
-	$(${BIN} "${QUERY}")
-
-    echo ${PROJECT_NAME}
-fi</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1170,9 +1057,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1194,7 +1081,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "PhpStorm"</string>
+				<string>./bin/alfred_jetbrains_cli search --product phpStorm</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1204,7 +1091,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open PhpStorm Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1286,9 +1173,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1310,7 +1197,8 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "PyCharm"</string>
+				<string># ./bin/alfred_jetbrains_cli search --product pyCharmProfessional
+./bin/alfred_jetbrains_cli search --product pyCharmCommunity</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1320,7 +1208,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open PyCharm Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1335,9 +1223,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1359,7 +1247,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "WebStorm"</string>
+				<string>./bin/alfred_jetbrains_cli search --product webStorm</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1369,7 +1257,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open WebStorm Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1426,9 +1314,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1450,7 +1338,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "AndroidStudio"</string>
+				<string>./bin/alfred_jetbrains_cli search --product androidStudio</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1460,7 +1348,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open Android Studio Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1517,9 +1405,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1541,7 +1429,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "Rider"</string>
+				<string>./bin/alfred_jetbrains_cli search --product rider</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1551,7 +1439,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open Rider Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1608,9 +1496,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -1632,7 +1520,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1" "RubyMine"</string>
+				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1642,7 +1530,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>title</key>
 				<string>Open RubyMine Project</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1650,6 +1538,55 @@ echo "${PROJECT_NAME}"</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>fleet</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product fleet</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Fleet Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AE8805DA-8F94-4417-87ED-2AF74E5A1387</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1661,342 +1598,390 @@ echo "${PROJECT_NAME}"</string>
 		<key>04BB4121-6857-40CA-A178-444F805A4609</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>150</integer>
-		</dict>
-		<key>1048003F-FD09-4F66-883A-946C63FB3F25</key>
-		<dict>
-			<key>xpos</key>
-			<integer>370</integer>
-			<key>ypos</key>
-			<integer>20</integer>
+			<real>150</real>
 		</dict>
 		<key>12F443E9-CD70-4BCB-A2C9-31292B173AD8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>141026F3-CC2E-4808-BF5B-BC24CCA41438</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>630</integer>
+			<real>630</real>
 		</dict>
 		<key>1C8E36D1-D53F-44D1-A132-9E9042102FC8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1790</integer>
+			<real>1790</real>
 			<key>ypos</key>
-			<integer>690</integer>
+			<real>690</real>
 		</dict>
 		<key>214F30C6-650C-4EE3-9B2E-4C1472539D1C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>630</integer>
+			<real>630</real>
 		</dict>
 		<key>24DD127D-7855-497B-BC85-D91EC2EE4D69</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>390</integer>
+			<real>390</real>
 		</dict>
 		<key>36F4A7E3-7146-4680-B330-EEBDC70FC711</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>750</integer>
+			<real>750</real>
 		</dict>
 		<key>3FA03900-5ED6-405D-84ED-186FF9D8D008</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>1230</integer>
+			<real>1230</real>
 		</dict>
 		<key>4351DCAE-6808-4ECC-A24D-05AF772CEC48</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>270</integer>
+			<real>270</real>
 		</dict>
 		<key>4531DC81-2C57-4A9F-84CE-C134A7B8B17B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>870</integer>
+			<real>870</real>
 		</dict>
 		<key>4E8D0AC6-BCCB-487E-9D63-A5B41738F74C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>750</integer>
+			<real>750</real>
 		</dict>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>390</integer>
+			<real>390</real>
 		</dict>
 		<key>584EFEBB-D917-4516-B99C-895EB85B628F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>1110</integer>
+			<real>1110</real>
 		</dict>
 		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>45</integer>
+			<real>45</real>
 			<key>ypos</key>
-			<integer>1350</integer>
+			<real>1350</real>
 		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>990</integer>
+			<real>990</real>
 		</dict>
 		<key>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<real>370</real>
 			<key>ypos</key>
-			<integer>690</integer>
+			<real>685</real>
 		</dict>
 		<key>6F9194BE-EBEA-4549-B68C-9D5B23234A3C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>390</integer>
-		</dict>
-		<key>76272E93-EA9D-47C1-BC2A-2262DFF0AB33</key>
-		<dict>
-			<key>xpos</key>
-			<integer>600</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
-		<key>78F02C95-38A7-4977-8A68-610BAFBEB137</key>
-		<dict>
-			<key>xpos</key>
-			<integer>50</integer>
-			<key>ypos</key>
-			<integer>20</integer>
-		</dict>
-		<key>7C053716-F85B-468D-91F1-BFF99D725AFA</key>
-		<dict>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>50</integer>
+			<real>390</real>
 		</dict>
 		<key>7D2F004D-E2B0-4799-AF18-2FC32E69C362</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>990C2268-24A2-498E-B72A-D1FC61FB18FF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>9A358188-6F3F-4063-AA6C-5DE6E7102212</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>870</integer>
+			<real>870</real>
 		</dict>
 		<key>9A5C474B-A56F-4C12-9723-079CD543C502</key>
 		<dict>
 			<key>xpos</key>
-			<integer>45</integer>
+			<real>45</real>
 			<key>ypos</key>
-			<integer>1230</integer>
+			<real>1230</real>
 		</dict>
 		<key>A7087DC3-4F24-4B18-BDA6-AB87DF5FEAAC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>270</integer>
+			<real>270</real>
+		</dict>
+		<key>AE8805DA-8F94-4417-87ED-2AF74E5A1387</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>1470</real>
 		</dict>
 		<key>B7E2DFA8-B9D2-463D-BC65-E609BE0E36A8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>870</integer>
+			<real>870</real>
 		</dict>
 		<key>BD2ABD1F-2EA4-45CC-AB96-975D5280201F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>630</integer>
+			<real>630</real>
 		</dict>
 		<key>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1525</integer>
+			<real>1525</real>
 			<key>ypos</key>
-			<integer>690</integer>
+			<real>690</real>
 		</dict>
 		<key>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>1110</integer>
+			<real>1110</real>
 		</dict>
 		<key>C924EB4E-3A7E-4513-A237-261E1E274B66</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>270</integer>
+			<real>270</real>
 		</dict>
 		<key>D112F0F3-9DDF-42CE-8CED-B7FFA9D2E05A</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>750</integer>
+			<real>750</real>
 		</dict>
 		<key>DA238413-3FBD-4358-82B7-988FF9101561</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 			<key>ypos</key>
-			<integer>990</integer>
+			<real>990</real>
 		</dict>
 		<key>EC740D89-02C0-457D-8BA7-5B217AF57583</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>1230</integer>
+			<real>1230</real>
 		</dict>
 		<key>F937E115-1982-4A0B-BBAF-36FFC7E145A4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>1110</integer>
+			<real>1110</real>
 		</dict>
 		<key>FC4986BC-7DE0-4DD5-9754-EE7985EC31AA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1215</integer>
+			<real>1215</real>
 			<key>ypos</key>
-			<integer>990</integer>
+			<real>990</real>
 		</dict>
 		<key>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</key>
 		<dict>
 			<key>xpos</key>
-			<integer>600</integer>
+			<real>600</real>
 			<key>ypos</key>
-			<integer>690</integer>
+			<real>690</real>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>jb_enhanced_search</key>
-		<string>1</string>
-		<key>jb_product_cache_lifetime</key>
-		<string>86400</string>
-		<key>jb_product_customisation_file</key>
-		<string></string>
-		<key>jb_project_cache_lifetime</key>
-		<string>3600</string>
-		<key>jb_search_customisation_file</key>
-		<string></string>
-	</dict>
-	<key>variablesdontexport</key>
+	<key>userconfigurationconfig</key>
 	<array>
-		<string>jb_preferences_pycharm</string>
-		<string>jb_search_customisation_file</string>
-		<string>jb_preferences_intellijidea</string>
-		<string>jb_product_customisation_file</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>~/Library/Application Support/Google:~/Library/Application Support/JetBrains:~/Library/Preferences</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Paths to JetBrains products settings. Paths should be separate by colon (:)</string>
+			<key>label</key>
+			<string>JetBrains Product Settings Paths</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>jb_settings</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/usr/local/bin:~/Library/Application Support/JetBrains/Toolbox/scripts</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Paths to JetBrains binaries. Paths should be separate by colon (:)</string>
+			<key>label</key>
+			<string>JetBrains Product binaries Paths</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>jb_binaries</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/Applications:~/Applications:~/Applications/JetBrains Toolbox</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Paths to JetBrains application. Paths should be separate by colon (:)</string>
+			<key>label</key>
+			<string>JetBrains Product applications Paths</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>jb_application</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>{}</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+				<key>verticalsize</key>
+				<integer>6</integer>
+			</dict>
+			<key>description</key>
+			<string>Information about the format will be available soon</string>
+			<key>label</key>
+			<string>Custom config per JetBrains Product</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>jb_custom_config</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string></string>
+	<string>2.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
 </plist>
