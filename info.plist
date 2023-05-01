@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>37723EEA-9E09-4CEE-B390-5B5B013025F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3FA03900-5ED6-405D-84ED-186FF9D8D008</key>
 		<array>
 			<dict>
@@ -464,6 +477,55 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>appcode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open AppCode Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>37723EEA-9E09-4CEE-B390-5B5B013025F0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -519,7 +581,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>appcode</string>
+				<string>aqua</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -531,7 +593,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
+				<string>./bin/alfred_jetbrains_cli search --product aqua</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -539,7 +601,7 @@
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open AppCode Project</string>
+				<string>Open Aqua Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1653,6 +1715,13 @@ echo "${PROJECT_NAME}"</string>
 			<real>1215</real>
 			<key>ypos</key>
 			<real>750</real>
+		</dict>
+		<key>37723EEA-9E09-4CEE-B390-5B5B013025F0</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>35</real>
 		</dict>
 		<key>3FA03900-5ED6-405D-84ED-186FF9D8D008</key>
 		<dict>
