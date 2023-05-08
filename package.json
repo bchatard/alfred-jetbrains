@@ -1,18 +1,20 @@
 {
   "name": "@bchatard/alfred-jetbrains",
-  "version": "1.9.8",
-  "description": "Alfred3 workflow to easily open your projects with your favorite JetBrains product.",
-  "exports": "./src/index.js",
+  "version": "2.0.0-2",
+  "description": "Alfred 5 workflow to easily open your projects with your favorite JetBrains product.",
+  "exports": "./bin/alfred_jetbrains_cli",
   "type": "module",
   "scripts": {
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "prepare": "husky install",
+    "postinstall": "./bin/alfred_jetbrains_cli install",
+    "preuninstall": "echo \"Error: TODO\" && exit 0",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/bchatard/alfred-jetbrains.git"
+  },
+  "bin": {
+    "alfred-jetbrains-cli": "./bin/alfred_jetbrains_cli"
   },
   "keywords": [
     "jebrains",
@@ -27,28 +29,13 @@
     "url": "https://github.com/bchatard/alfred-jetbrains/issues"
   },
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
-  "dependencies": {
-    "alfy": "^1.0.0",
-    "execa": "^7.0.0",
-    "fast-xml-parser": "^4.0.7",
-    "fuse.js": "^6.5.3",
-    "which": "^3.0.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
-    "husky": "^8.0.0",
-    "prettier": "^2.5.0",
-    "pretty-quick": "^3.1.2"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=14"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   },
   "volta": {
     "node": "14.18.2"
