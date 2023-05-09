@@ -151,6 +151,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>507031E3-804C-405D-8BAD-F031D98B3118</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0AE1DC5-0505-4AF1-BFDF-57011550C928</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>570591EB-6555-4981-9C82-80F514390CD4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDD0D2DD-C4E4-4573-AB48-71856935E95A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<array>
 			<dict>
@@ -411,6 +437,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DDD0D2DD-C4E4-4573-AB48-71856935E95A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</key>
 		<array>
 			<dict>
@@ -425,6 +464,19 @@
 			</dict>
 		</array>
 		<key>EC740D89-02C0-457D-8BA7-5B217AF57583</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F0AE1DC5-0505-4AF1-BFDF-57011550C928</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -474,6 +526,46 @@
 	<string>JetBrains - Open Project</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product appCode --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F0AE1DC5-0505-4AF1-BFDF-57011550C928</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>appcode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>507031E3-804C-405D-8BAD-F031D98B3118</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -531,9 +623,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "AppCode"</string>
+				<string>./bin/alfred_jetbrains_cli open --product aqua --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -556,7 +646,7 @@
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>appcode</string>
+				<string>aqua</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -688,9 +778,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "CLion"</string>
+				<string>./bin/alfred_jetbrains_cli open --product cLion --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -713,9 +801,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "DataGrip"</string>
+				<string>./bin/alfred_jetbrains_cli open --product dataGrip --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -821,9 +907,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "GoLand"</string>
+				<string>./bin/alfred_jetbrains_cli open --product goLand --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -932,7 +1016,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product intelliJIdeaUltimate</string>
+				<string>./bin/alfred_jetbrains_cli search --product ${jb_idea_edition}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -961,9 +1045,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "IntelliJIdea"</string>
+				<string>./bin/alfred_jetbrains_cli open --product ${jb_idea_edition} --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1172,9 +1254,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "PhpStorm"</string>
+				<string>./bin/alfred_jetbrains_cli open --product phpStorm --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1214,9 +1294,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "PyCharm"</string>
+				<string>./bin/alfred_jetbrains_cli open --product ${jb_pycharm_edition} --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1259,8 +1337,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string># ./bin/alfred_jetbrains_cli search --product pyCharmProfessional
-./bin/alfred_jetbrains_cli search --product pyCharmCommunity</string>
+				<string>./bin/alfred_jetbrains_cli search --product ${jb_pycharm_edition}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1338,12 +1415,12 @@ echo "${PROJECT_NAME}"</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>wstorm</string>
+				<string>rider</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</string>
+			<string>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1355,9 +1432,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "WebStorm"</string>
+				<string>./bin/alfred_jetbrains_cli open --product rider --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1368,7 +1443,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>FC4986BC-7DE0-4DD5-9754-EE7985EC31AA</string>
+			<string>F937E115-1982-4A0B-BBAF-36FFC7E145A4</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1429,12 +1504,12 @@ echo "${PROJECT_NAME}"</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>rider</string>
+				<string>rubymine</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</string>
+			<string>3FA03900-5ED6-405D-84ED-186FF9D8D008</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1446,9 +1521,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "Rider"</string>
+				<string>./bin/alfred_jetbrains_cli open --product rubyMine --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1459,7 +1532,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F937E115-1982-4A0B-BBAF-36FFC7E145A4</string>
+			<string>EC740D89-02C0-457D-8BA7-5B217AF57583</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1515,17 +1588,57 @@ echo "${PROJECT_NAME}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product studio --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DDD0D2DD-C4E4-4573-AB48-71856935E95A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>rubymine</string>
+				<string>studio</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>3FA03900-5ED6-405D-84ED-186FF9D8D008</string>
+			<string>570591EB-6555-4981-9C82-80F514390CD4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>wstorm</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1537,9 +1650,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-./node_modules/.bin/run-node src/fileAction.js "$1" "RubyMine"</string>
+				<string>./bin/alfred_jetbrains_cli open --product webStorm --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1550,7 +1661,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>EC740D89-02C0-457D-8BA7-5B217AF57583</string>
+			<string>FC4986BC-7DE0-4DD5-9754-EE7985EC31AA</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1728,9 +1839,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1020</real>
+			<real>1025</real>
 			<key>ypos</key>
-			<real>1230</real>
+			<real>1110</real>
 		</dict>
 		<key>4351DCAE-6808-4ECC-A24D-05AF772CEC48</key>
 		<dict>
@@ -1758,6 +1869,24 @@ echo "${PROJECT_NAME}"</string>
 			<real>1020</real>
 			<key>ypos</key>
 			<real>750</real>
+		</dict>
+		<key>507031E3-804C-405D-8BAD-F031D98B3118</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1020</real>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>570591EB-6555-4981-9C82-80F514390CD4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1025</real>
+			<key>ypos</key>
+			<real>1230</real>
 		</dict>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<dict>
@@ -1883,9 +2012,9 @@ echo "${PROJECT_NAME}"</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1020</real>
+			<real>1025</real>
 			<key>ypos</key>
-			<real>1110</real>
+			<real>990</real>
 		</dict>
 		<key>C924EB4E-3A7E-4513-A237-261E1E274B66</key>
 		<dict>
@@ -1917,6 +2046,15 @@ echo "${PROJECT_NAME}"</string>
 			<key>ypos</key>
 			<real>510</real>
 		</dict>
+		<key>DDD0D2DD-C4E4-4573-AB48-71856935E95A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>1230</real>
+		</dict>
 		<key>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</key>
 		<dict>
 			<key>colorindex</key>
@@ -1924,25 +2062,34 @@ echo "${PROJECT_NAME}"</string>
 			<key>xpos</key>
 			<real>1020</real>
 			<key>ypos</key>
-			<real>990</real>
+			<real>1350</real>
 		</dict>
 		<key>EC740D89-02C0-457D-8BA7-5B217AF57583</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1215</real>
+			<real>1220</real>
 			<key>ypos</key>
-			<real>1230</real>
+			<real>1110</real>
 		</dict>
-		<key>F937E115-1982-4A0B-BBAF-36FFC7E145A4</key>
+		<key>F0AE1DC5-0505-4AF1-BFDF-57011550C928</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
 			<real>1215</real>
 			<key>ypos</key>
-			<real>1110</real>
+			<real>30</real>
+		</dict>
+		<key>F937E115-1982-4A0B-BBAF-36FFC7E145A4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>990</real>
 		</dict>
 		<key>FC4986BC-7DE0-4DD5-9754-EE7985EC31AA</key>
 		<dict>
@@ -1951,7 +2098,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>xpos</key>
 			<real>1215</real>
 			<key>ypos</key>
-			<real>990</real>
+			<real>1350</real>
 		</dict>
 		<key>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</key>
 		<dict>
@@ -2047,9 +2194,61 @@ echo "${PROJECT_NAME}"</string>
 			<key>variable</key>
 			<string>jb_custom_config</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>intelliJIdeaCommunity</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Community</string>
+						<string>intelliJIdeaCommunity</string>
+					</array>
+					<array>
+						<string>Ultimate</string>
+						<string>intelliJIdeaUltimate</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>IntelliJ Idea Edition</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>jb_idea_edition</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>pyCharmCommunity</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Community</string>
+						<string>pyCharmCommunity</string>
+					</array>
+					<array>
+						<string>Professional</string>
+						<string>pyCharmProfessional</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>PyCharm Edition</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>jb_pycharm_edition</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.0</string>
+	<string>2.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
