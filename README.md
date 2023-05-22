@@ -51,6 +51,7 @@ $ npm install -g @bchatard/alfred-jetbrains
 - Aqua: `aqua`;
 - CLion: `clion`;
 - DataGrip: `datagrip`;
+- DataSpell: `dataspell`;
 - Fleet: `fleet`;
 - GoLand: `goland`;
 - IntelliJ Idea: `idea` (default to Ultimate Edition, see [customisation to change this](#customisation));
@@ -71,6 +72,7 @@ I test with these products/versions:
 - Aqua: since 2023.1;
 - CLion: since 2018.3;
 - DataGrip: since 2018.3;
+- DataSpell: since 2023.1;
 - Fleet: public preview;
 - GoLand: since 2018.3;
 - IntelliJ Idea: since 2018.3;
