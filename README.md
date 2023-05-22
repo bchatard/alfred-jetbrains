@@ -48,15 +48,17 @@ $ npm install -g @bchatard/alfred-jetbrains
 
 - AndroidStudio: `studio`;
 - AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
+- Aqua: `aqua`;
 - CLion: `clion`;
 - DataGrip: `datagrip`;
+- Fleet: `fleet`;
 - GoLand: `goland`;
 - IntelliJ Idea: `idea` (default to Ultimate Edition, see [customisation to change this](#customisation));
 - PhpStorm: `pstorm`;
 - PyCharm: `pycharm` (default to Professional Edition, see [customisation to change this](#customisation));
-- WebStorm: `wstorm`;
 - Rider: `rider`;
 - RubyMine: `rubymine`;
+- WebStorm: `wstorm`;
 
 </details>
 
@@ -66,14 +68,17 @@ I test with these products/versions:
 
 - AndroidStudio: since 3.+;
 - AppCode: since 2018.3;
+- Aqua: since 2023.1;
 - CLion: since 2018.3;
 - DataGrip: since 2018.3;
+- Fleet: public preview;
 - GoLand: since 2018.3;
 - IntelliJ Idea: since 2018.3;
 - PhpStorm: since 2018.3;
 - PyCharm: since 2018.3;
-- WebStorm: since 2018.3;
+- Rider: since 2018.3;
 - RubyMine: since 2018.3;
+- WebStorm: since 2018.3;
 
 For other versions:
 

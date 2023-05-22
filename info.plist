@@ -21,6 +21,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>073466D0-713A-4041-B70F-2B606FCEFFDC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FE5C14B7-FF53-4024-A39F-58DCAEFC7446</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0E5A2527-EC49-45DE-84A8-24F9D228137F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>12F443E9-CD70-4BCB-A2C9-31292B173AD8</key>
 		<array>
 			<dict>
@@ -216,6 +242,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>6C589E3E-2878-4A7A-8A93-74FF91603934</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0E5A2527-EC49-45DE-84A8-24F9D228137F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<array>
 			<dict>
@@ -372,6 +411,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C4D97665-87E9-435E-86C6-8EBE574E2D45</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</key>
 		<array>
 			<dict>
@@ -503,6 +555,19 @@
 			</dict>
 		</array>
 		<key>FC4986BC-7DE0-4DD5-9754-EE7985EC31AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE5C14B7-FF53-4024-A39F-58DCAEFC7446</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -1717,6 +1782,46 @@ echo "${PROJECT_NAME}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product fleet --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0E5A2527-EC49-45DE-84A8-24F9D228137F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>fleet</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>6C589E3E-2878-4A7A-8A93-74FF91603934</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1763,9 +1868,180 @@ echo "${PROJECT_NAME}"</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product dataSpell --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FE5C14B7-FF53-4024-A39F-58DCAEFC7446</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>dataspell</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>073466D0-713A-4041-B70F-2B606FCEFFDC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dataspell</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product dataSpell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open DataSpell Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C4D97665-87E9-435E-86C6-8EBE574E2D45</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># JetBrains: Open project
+
+**Alfred5** workflow to easily open your projects with your favorite JetBrains product.
+
+## Requirements
+
+You need [Node.js 14+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+
+This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
+
+## About issues
+
+It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
+* macOS 13.3
+* Alfred 5 (latest available)
+* at least Node 14, but not really important, node is only required to install this workflow
+
+Please check the troubleshooting guide first, and other issues.
+And please follow the issue template for bug report 🙏
+
+## Installation / Update
+
+`npm install -g @bchatard/alfred-jetbrains`
+
+
+### Init shell script
+
+- Via JetBrains Toolbox:
+  - Open the JetBrains Toolbox window, and then click on the parameter icon;
+  - In the following form, enable _Generate shell scripts_, and set a path for script
+  - More info: [Toolbox App 1.11: What’s New.](https://blog.jetbrains.com/blog/2018/08/23/toolbox-app-1-11-whats-new/)
+- Via Product (removed since 2023.x)
+
+
+## How to use
+
+- Open Alfred with your usual hotkey
+- Type keyword (example `pstorm`) followed by your project name
+
+
+### Default Keywords
+
+- AndroidStudio: `studio`;
+- AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
+- Aqua: `aqua`;
+- CLion: `clion`;
+- DataGrip: `datagrip`;
+- DataSpell: `dataspell`;
+- Fleet: `fleet`;
+- GoLand: `goland`;
+- IntelliJ Idea: `idea` (default to Ultimate Edition);
+- PhpStorm: `pstorm`;
+- PyCharm: `pycharm` (default to Professional Edition);
+- Rider: `rider`;
+- RubyMine: `rubymine`;
+- WebStorm: `wstorm`;
+
+### Supported versions
+I test with these products/versions:
+
+- AndroidStudio: since 3.+;
+- AppCode: since 2018.3;
+- Aqua: since 2023.1;
+- CLion: since 2018.3;
+- DataGrip: since 2018.3;
+- DataSpell: since 2023.1;
+- Fleet: public preview
+- GoLand: since 2018.3;
+- IntelliJ Idea: since 2018.3;
+- PhpStorm: since 2018.3;
+- PyCharm: since 2018.3;
+- Rider: since 2018.3;
+- RubyMine: since 2018.3;
+- WebStorm: since 2018.3;
+
+
+## Changelog
+
+[Changelog](https://github.com/bchatard/alfred-jetbrains/releases)
+
+## License
+
+[MIT](LICENSE) © [bchatard](https://github.com/bchatard)</string>
 	<key>uidata</key>
 	<dict>
 		<key>04BB4121-6857-40CA-A178-444F805A4609</key>
@@ -1774,6 +2050,24 @@ echo "${PROJECT_NAME}"</string>
 			<real>50</real>
 			<key>ypos</key>
 			<real>150</real>
+		</dict>
+		<key>073466D0-713A-4041-B70F-2B606FCEFFDC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1020</real>
+			<key>ypos</key>
+			<real>1575</real>
+		</dict>
+		<key>0E5A2527-EC49-45DE-84A8-24F9D228137F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1215</real>
+			<key>ypos</key>
+			<real>1460</real>
 		</dict>
 		<key>12F443E9-CD70-4BCB-A2C9-31292B173AD8</key>
 		<dict>
@@ -1909,6 +2203,15 @@ echo "${PROJECT_NAME}"</string>
 			<key>ypos</key>
 			<real>1350</real>
 		</dict>
+		<key>6C589E3E-2878-4A7A-8A93-74FF91603934</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1020</real>
+			<key>ypos</key>
+			<real>1460</real>
+		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<dict>
 			<key>xpos</key>
@@ -2006,6 +2309,13 @@ echo "${PROJECT_NAME}"</string>
 			<real>1525</real>
 			<key>ypos</key>
 			<real>690</real>
+		</dict>
+		<key>C4D97665-87E9-435E-86C6-8EBE574E2D45</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>1590</real>
 		</dict>
 		<key>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</key>
 		<dict>
@@ -2106,6 +2416,15 @@ echo "${PROJECT_NAME}"</string>
 			<real>600</real>
 			<key>ypos</key>
 			<real>690</real>
+		</dict>
+		<key>FE5C14B7-FF53-4024-A39F-58DCAEFC7446</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1215</real>
+			<key>ypos</key>
+			<real>1575</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -2248,7 +2567,7 @@ echo "${PROJECT_NAME}"</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.1</string>
+	<string>2.0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
