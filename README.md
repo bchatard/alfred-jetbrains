@@ -46,6 +46,8 @@ $ npm install -g @bchatard/alfred-jetbrains
 <details>
 <summary>Default Keywords</summary>
 
+- Cross Products: `jb` (search projects on for all products)
+
 - AndroidStudio: `studio`;
 - AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
 - Aqua: `aqua`;

@@ -359,6 +359,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A965582C-666D-42B6-B5D6-7438B77205CA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AE8805DA-8F94-4417-87ED-2AF74E5A1387</key>
 		<array>
 			<dict>
@@ -647,6 +660,135 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>jb</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli all</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A965582C-666D-42B6-B5D6-7438B77205CA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product aqua --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>12F443E9-CD70-4BCB-A2C9-31292B173AD8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>aqua</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>7D2F004D-E2B0-4799-AF18-2FC32E69C362</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>clion</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>4351DCAE-6808-4ECC-A24D-05AF772CEC48</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product cLion --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A7087DC3-4F24-4B18-BDA6-AB87DF5FEAAC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>appcode</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -688,7 +830,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product aqua --path "$1"</string>
+				<string>./bin/alfred_jetbrains_cli open --product dataGrip --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -699,7 +841,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>12F443E9-CD70-4BCB-A2C9-31292B173AD8</string>
+			<string>6F9194BE-EBEA-4549-B68C-9D5B23234A3C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -711,12 +853,12 @@
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>aqua</string>
+				<string>datagrip</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>7D2F004D-E2B0-4799-AF18-2FC32E69C362</string>
+			<string>24DD127D-7855-497B-BC85-D91EC2EE4D69</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -777,14 +919,37 @@
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>clion</string>
+				<string>goland</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>4351DCAE-6808-4ECC-A24D-05AF772CEC48</string>
+			<string>D112F0F3-9DDF-42CE-8CED-B7FFA9D2E05A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product goLand --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>990C2268-24A2-498E-B72A-D1FC61FB18FF</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -838,207 +1003,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product cLion --path "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A7087DC3-4F24-4B18-BDA6-AB87DF5FEAAC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product dataGrip --path "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6F9194BE-EBEA-4549-B68C-9D5B23234A3C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>datagrip</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>searching project</string>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product dataGrip</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Open Project</string>
-				<key>title</key>
-				<string>Open DataGrip Project</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>5820F56E-186F-4CC4-B473-284FECF50653</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>datagrip</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>24DD127D-7855-497B-BC85-D91EC2EE4D69</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>goland</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>D112F0F3-9DDF-42CE-8CED-B7FFA9D2E05A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product goLand --path "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>990C2268-24A2-498E-B72A-D1FC61FB18FF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>goland</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>searching project</string>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product goLand</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Open Project</string>
-				<key>title</key>
-				<string>Open GoLand Project</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>DA238413-3FBD-4358-82B7-988FF9101561</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
@@ -1052,55 +1016,6 @@
 			<string>BD2ABD1F-2EA4-45CC-AB96-975D5280201F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>idea</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>searching project</string>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product ${jb_idea_edition}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Open Project</string>
-				<key>title</key>
-				<string>Open IntelliJIdea Project</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>141026F3-CC2E-4808-BF5B-BC24CCA41438</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1159,6 +1074,55 @@ fi</string>
 			<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>datagrip</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product dataGrip</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open DataGrip Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5820F56E-186F-4CC4-B473-284FECF50653</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1265,55 +1229,6 @@ echo "${PROJECT_NAME}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>pstorm</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>searching project</string>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product phpStorm</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Open Project</string>
-				<key>title</key>
-				<string>Open PhpStorm Project</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1333,6 +1248,55 @@ echo "${PROJECT_NAME}"</string>
 			<string>36F4A7E3-7146-4680-B330-EEBDC70FC711</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>goland</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product goLand</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open GoLand Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DA238413-3FBD-4358-82B7-988FF9101561</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1390,7 +1354,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>pycharm</string>
+				<string>idea</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1402,7 +1366,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product ${jb_pycharm_edition}</string>
+				<string>./bin/alfred_jetbrains_cli search --product ${jb_idea_edition}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1410,7 +1374,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open PyCharm Project</string>
+				<string>Open IntelliJIdea Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1419,56 +1383,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>9A358188-6F3F-4063-AA6C-5DE6E7102212</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>wstorm</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>searching project</string>
-				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product webStorm</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Open Project</string>
-				<key>title</key>
-				<string>Open WebStorm Project</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>6DEF14CA-6899-481D-9590-8A6BCC174DEF</string>
+			<string>141026F3-CC2E-4808-BF5B-BC24CCA41438</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1528,7 +1443,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>studio</string>
+				<string>pstorm</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1540,7 +1455,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product androidStudio</string>
+				<string>./bin/alfred_jetbrains_cli search --product phpStorm</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1548,7 +1463,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open Android Studio Project</string>
+				<string>Open PhpStorm Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1557,7 +1472,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>584EFEBB-D917-4516-B99C-895EB85B628F</string>
+			<string>D6B5E6CE-D21B-4175-AB8E-1F2A6ED7A298</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1617,7 +1532,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>rider</string>
+				<string>pycharm</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1629,7 +1544,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product rider</string>
+				<string>./bin/alfred_jetbrains_cli search --product ${jb_pycharm_edition}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1637,7 +1552,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open Rider Project</string>
+				<string>Open PyCharm Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1646,7 +1561,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
+			<string>9A358188-6F3F-4063-AA6C-5DE6E7102212</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1689,6 +1604,55 @@ echo "${PROJECT_NAME}"</string>
 			<string>570591EB-6555-4981-9C82-80F514390CD4</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>wstorm</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product webStorm</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open WebStorm Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6DEF14CA-6899-481D-9590-8A6BCC174DEF</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1746,7 +1710,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>rubymine</string>
+				<string>studio</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1758,7 +1722,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
+				<string>./bin/alfred_jetbrains_cli search --product androidStudio</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1766,7 +1730,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open RubyMine Project</string>
+				<string>Open Android Studio Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1775,7 +1739,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
+			<string>584EFEBB-D917-4516-B99C-895EB85B628F</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1835,7 +1799,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>fleet</string>
+				<string>rider</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1847,7 +1811,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product fleet</string>
+				<string>./bin/alfred_jetbrains_cli search --product rider</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1855,7 +1819,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open Fleet Project</string>
+				<string>Open Rider Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1864,7 +1828,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>AE8805DA-8F94-4417-87ED-2AF74E5A1387</string>
+			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1907,6 +1871,104 @@ echo "${PROJECT_NAME}"</string>
 			<string>073466D0-713A-4041-B70F-2B606FCEFFDC</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>rubymine</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open RubyMine Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>fleet</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product fleet</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Fleet Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AE8805DA-8F94-4417-87ED-2AF74E5A1387</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2001,6 +2063,8 @@ And please follow the issue template for bug report 🙏
 
 ### Default Keywords
 
+- Cross Products: `jb` (search projects on for all products)
+
 - AndroidStudio: `studio`;
 - AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
 - Aqua: `aqua`;
@@ -2049,7 +2113,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>445</real>
 		</dict>
 		<key>073466D0-713A-4041-B70F-2B606FCEFFDC</key>
 		<dict>
@@ -2083,7 +2147,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>630</real>
+			<real>925</real>
 		</dict>
 		<key>1C8E36D1-D53F-44D1-A132-9E9042102FC8</key>
 		<dict>
@@ -2126,7 +2190,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>330</real>
 		</dict>
 		<key>3FA03900-5ED6-405D-84ED-186FF9D8D008</key>
 		<dict>
@@ -2187,21 +2251,21 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>685</real>
 		</dict>
 		<key>584EFEBB-D917-4516-B99C-895EB85B628F</key>
 		<dict>
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>1110</real>
+			<real>1405</real>
 		</dict>
 		<key>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</key>
 		<dict>
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>1350</real>
+			<real>1645</real>
 		</dict>
 		<key>6C589E3E-2878-4A7A-8A93-74FF91603934</key>
 		<dict>
@@ -2217,7 +2281,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>990</real>
+			<real>1285</real>
 		</dict>
 		<key>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</key>
 		<dict>
@@ -2258,14 +2322,14 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>870</real>
+			<real>1165</real>
 		</dict>
 		<key>9A5C474B-A56F-4C12-9723-079CD543C502</key>
 		<dict>
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>1230</real>
+			<real>1525</real>
 		</dict>
 		<key>A7087DC3-4F24-4B18-BDA6-AB87DF5FEAAC</key>
 		<dict>
@@ -2276,12 +2340,19 @@ I test with these products/versions:
 			<key>ypos</key>
 			<real>270</real>
 		</dict>
+		<key>A965582C-666D-42B6-B5D6-7438B77205CA</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
 		<key>AE8805DA-8F94-4417-87ED-2AF74E5A1387</key>
 		<dict>
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>1470</real>
+			<real>1765</real>
 		</dict>
 		<key>B7E2DFA8-B9D2-463D-BC65-E609BE0E36A8</key>
 		<dict>
@@ -2315,7 +2386,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
-			<real>1590</real>
+			<real>1885</real>
 		</dict>
 		<key>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</key>
 		<dict>
@@ -2331,7 +2402,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>270</real>
+			<real>565</real>
 		</dict>
 		<key>D112F0F3-9DDF-42CE-8CED-B7FFA9D2E05A</key>
 		<dict>
@@ -2347,14 +2418,14 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>750</real>
+			<real>1045</real>
 		</dict>
 		<key>DA238413-3FBD-4358-82B7-988FF9101561</key>
 		<dict>
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>510</real>
+			<real>805</real>
 		</dict>
 		<key>DDD0D2DD-C4E4-4573-AB48-71856935E95A</key>
 		<dict>
@@ -2567,7 +2638,7 @@ I test with these products/versions:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.3</string>
+	<string>2.0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
