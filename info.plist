@@ -2638,7 +2638,7 @@ I test with these products/versions:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.4</string>
+	<string>2.0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
