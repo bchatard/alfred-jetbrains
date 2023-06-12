@@ -2073,9 +2073,9 @@ And please follow the issue template for bug report 🙏
 - DataSpell: `dataspell`;
 - Fleet: `fleet`;
 - GoLand: `goland`;
-- IntelliJ Idea: `idea` (default to Ultimate Edition);
+- IntelliJ Idea: `idea` (default to Community Edition);
 - PhpStorm: `pstorm`;
-- PyCharm: `pycharm` (default to Professional Edition);
+- PyCharm: `pycharm` (default to Community Edition);
 - Rider: `rider`;
 - RubyMine: `rubymine`;
 - WebStorm: `wstorm`;

@@ -56,9 +56,9 @@ $ npm install -g @bchatard/alfred-jetbrains
 - DataSpell: `dataspell`;
 - Fleet: `fleet`;
 - GoLand: `goland`;
-- IntelliJ Idea: `idea` (default to Ultimate Edition, see [customisation to change this](#customisation));
+- IntelliJ Idea: `idea` (default to Community Edition, see [customisation to change this](#customisation));
 - PhpStorm: `pstorm`;
-- PyCharm: `pycharm` (default to Professional Edition, see [customisation to change this](#customisation));
+- PyCharm: `pycharm` (default to Community Edition, see [customisation to change this](#customisation));
 - Rider: `rider`;
 - RubyMine: `rubymine`;
 - WebStorm: `wstorm`;
