@@ -17,7 +17,7 @@ This workflow need one of JetBrains products (**2019.1+**), and its [shell scrip
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
 * macOS 13.3
 * Alfred 5 (latest available)
-* at least Node 14, but not really important, node is only required to install this workflow
+* at least Node 16, but not really important, node is only required to install this workflow
 
 Please check the [troubleshooting guide](doc/troubleshooting.md) first, and other issues.
 And please follow the issue template for bug report 🙏
