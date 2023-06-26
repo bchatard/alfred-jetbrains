@@ -2073,9 +2073,9 @@ And please follow the issue template for bug report 🙏
 - DataSpell: `dataspell`;
 - Fleet: `fleet`;
 - GoLand: `goland`;
-- IntelliJ Idea: `idea` (default to Community Edition);
+- IntelliJ Idea: `idea` (default to Ultimate Edition);
 - PhpStorm: `pstorm`;
-- PyCharm: `pycharm` (default to Community Edition);
+- PyCharm: `pycharm` (default to Professional Edition);
 - Rider: `rider`;
 - RubyMine: `rubymine`;
 - WebStorm: `wstorm`;
@@ -2638,7 +2638,7 @@ I test with these products/versions:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.5</string>
+	<string>2.0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
