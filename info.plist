@@ -164,6 +164,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>46D13299-642D-41FF-A34A-7FCA0CC948A8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4E8D0AC6-BCCB-487E-9D63-A5B41738F74C</key>
 		<array>
 			<dict>
@@ -385,6 +398,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B6503CFF-0D2E-4985-8178-828BE717B52D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB7F8BBA-013F-4CCD-8705-AA78E8158F60</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B7E2DFA8-B9D2-463D-BC65-E609BE0E36A8</key>
 		<array>
 			<dict>
@@ -494,6 +520,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DB7F8BBA-013F-4CCD-8705-AA78E8158F60</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4698FF1-B906-45A5-9CF7-EE4CA3DB2B8A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1573,7 +1612,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product studio --path "$1"</string>
+				<string>./bin/alfred_jetbrains_cli open --product rustRover --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1584,7 +1623,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>DDD0D2DD-C4E4-4573-AB48-71856935E95A</string>
+			<string>DB7F8BBA-013F-4CCD-8705-AA78E8158F60</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1596,12 +1635,12 @@ echo "${PROJECT_NAME}"</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>studio</string>
+				<string>rustrover</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>570591EB-6555-4981-9C82-80F514390CD4</string>
+			<string>B6503CFF-0D2E-4985-8178-828BE717B52D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1651,6 +1690,95 @@ echo "${PROJECT_NAME}"</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>6DEF14CA-6899-481D-9590-8A6BCC174DEF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli open --product studio --path "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DDD0D2DD-C4E4-4573-AB48-71856935E95A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>studio</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>570591EB-6555-4981-9C82-80F514390CD4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>studio</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product androidStudio</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Android Studio Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>584EFEBB-D917-4516-B99C-895EB85B628F</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1710,7 +1838,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>studio</string>
+				<string>rider</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1722,7 +1850,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product androidStudio</string>
+				<string>./bin/alfred_jetbrains_cli search --product rider</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1730,7 +1858,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open Android Studio Project</string>
+				<string>Open Rider Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1739,7 +1867,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>584EFEBB-D917-4516-B99C-895EB85B628F</string>
+			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1799,7 +1927,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>rider</string>
+				<string>rubymine</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1811,7 +1939,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product rider</string>
+				<string>./bin/alfred_jetbrains_cli search --product rubyMine</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1819,7 +1947,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open Rider Project</string>
+				<string>Open RubyMine Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1828,7 +1956,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>9A5C474B-A56F-4C12-9723-079CD543C502</string>
+			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1888,7 +2016,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>rubymine</string>
+				<string>rustrover</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1900,7 +2028,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product appCode</string>
+				<string>./bin/alfred_jetbrains_cli search --product rustRover</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1908,7 +2036,7 @@ echo "${PROJECT_NAME}"</string>
 				<key>subtext</key>
 				<string>Open Project</string>
 				<key>title</key>
-				<string>Open RubyMine Project</string>
+				<string>Open RustRover Project</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -1917,7 +2045,7 @@ echo "${PROJECT_NAME}"</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>60D577AB-F9AC-4EAA-83EF-38AA139C8C3F</string>
+			<string>46D13299-642D-41FF-A34A-7FCA0CC948A8</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -2027,7 +2155,7 @@ echo "${PROJECT_NAME}"</string>
 
 ## Requirements
 
-You need [Node.js 14+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js 16+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
@@ -2120,18 +2248,18 @@ I test with these products/versions:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1020</real>
+			<real>1015</real>
 			<key>ypos</key>
-			<real>1575</real>
+			<real>1705</real>
 		</dict>
 		<key>0E5A2527-EC49-45DE-84A8-24F9D228137F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1215</real>
+			<real>1210</real>
 			<key>ypos</key>
-			<real>1460</real>
+			<real>1590</real>
 		</dict>
 		<key>12F443E9-CD70-4BCB-A2C9-31292B173AD8</key>
 		<dict>
@@ -2219,6 +2347,13 @@ I test with these products/versions:
 			<key>ypos</key>
 			<real>870</real>
 		</dict>
+		<key>46D13299-642D-41FF-A34A-7FCA0CC948A8</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>1765</real>
+		</dict>
 		<key>4E8D0AC6-BCCB-487E-9D63-A5B41738F74C</key>
 		<dict>
 			<key>colorindex</key>
@@ -2242,9 +2377,9 @@ I test with these products/versions:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1025</real>
+			<real>1020</real>
 			<key>ypos</key>
-			<real>1230</real>
+			<real>1360</real>
 		</dict>
 		<key>5820F56E-186F-4CC4-B473-284FECF50653</key>
 		<dict>
@@ -2272,9 +2407,9 @@ I test with these products/versions:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1020</real>
+			<real>1015</real>
 			<key>ypos</key>
-			<real>1460</real>
+			<real>1590</real>
 		</dict>
 		<key>6DEF14CA-6899-481D-9590-8A6BCC174DEF</key>
 		<dict>
@@ -2352,7 +2487,16 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>45</real>
 			<key>ypos</key>
-			<real>1765</real>
+			<real>1885</real>
+		</dict>
+		<key>B6503CFF-0D2E-4985-8178-828BE717B52D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1025</real>
+			<key>ypos</key>
+			<real>1230</real>
 		</dict>
 		<key>B7E2DFA8-B9D2-463D-BC65-E609BE0E36A8</key>
 		<dict>
@@ -2386,7 +2530,7 @@ I test with these products/versions:
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
-			<real>1885</real>
+			<real>2005</real>
 		</dict>
 		<key>C52CA9B8-0D3A-4ACE-99E9-451BA401DA0E</key>
 		<dict>
@@ -2427,7 +2571,7 @@ I test with these products/versions:
 			<key>ypos</key>
 			<real>805</real>
 		</dict>
-		<key>DDD0D2DD-C4E4-4573-AB48-71856935E95A</key>
+		<key>DB7F8BBA-013F-4CCD-8705-AA78E8158F60</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
@@ -2436,14 +2580,23 @@ I test with these products/versions:
 			<key>ypos</key>
 			<real>1230</real>
 		</dict>
+		<key>DDD0D2DD-C4E4-4573-AB48-71856935E95A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>1215</real>
+			<key>ypos</key>
+			<real>1360</real>
+		</dict>
 		<key>E0CC0AA3-7D23-478D-9B85-FDB8288F9F6C</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1020</real>
+			<real>1015</real>
 			<key>ypos</key>
-			<real>1350</real>
+			<real>1480</real>
 		</dict>
 		<key>EC740D89-02C0-457D-8BA7-5B217AF57583</key>
 		<dict>
@@ -2477,9 +2630,9 @@ I test with these products/versions:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1215</real>
+			<real>1210</real>
 			<key>ypos</key>
-			<real>1350</real>
+			<real>1480</real>
 		</dict>
 		<key>FCED1CDA-1C34-423F-B0E0-ABB38FD2A598</key>
 		<dict>
@@ -2493,9 +2646,9 @@ I test with these products/versions:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<real>1215</real>
+			<real>1210</real>
 			<key>ypos</key>
-			<real>1575</real>
+			<real>1705</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -2638,7 +2791,7 @@ I test with these products/versions:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.7</string>
+	<string>2.0.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
