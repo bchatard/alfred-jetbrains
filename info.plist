@@ -138,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>42E7A634-7329-493F-8D10-DE6EBB15CB8B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E4478ED-172E-4AF8-8AFF-6D293B7A8D28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4351DCAE-6808-4ECC-A24D-05AF772CEC48</key>
 		<array>
 			<dict>
@@ -1088,6 +1101,10 @@
 				<integer>126</integer>
 				<key>script</key>
 				<string>if [[ -n "{query}" ]]; then
+	if [[ "${jb_source_zshrc}" == "1" ]]; then
+		source ~/.zshrc
+	fi
+
 	QUERY="{query}"
 	BIN=${jb_bin}
 	PROJECT_NAME=${jb_project_name}
@@ -1229,7 +1246,10 @@ PROJECT_NAME=$(jsonval $QUERY 'jb_project_name')
 #Using sed to properly escape spaces in the PROJECT_PATH
 PROJECT_PATH=$(jsonval "$QUERY" 'arg' | sed 's: :\\ :g' | sed -e 's:\\ : :1')
 
-source ~/.zshrc
+if [[ "${jb_source_zshrc}" == "1" ]]; then
+    source ~/.zshrc
+fi
+
 
 eval "${BIN}" "${PROJECT_PATH}"
 
@@ -2147,89 +2167,88 @@ echo "${PROJECT_NAME}"</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>writerside</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>searching project</string>
+				<key>script</key>
+				<string>./bin/alfred_jetbrains_cli search --product writerside</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open Project</string>
+				<key>title</key>
+				<string>Open Writerside Project</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>42E7A634-7329-493F-8D10-DE6EBB15CB8B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># JetBrains: Open project
 
 **Alfred5** workflow to easily open your projects with your favorite JetBrains product.
 
+**Check full [README](https://github.com/bchatard/alfred-jetbrains/blob/main/README.md)**
+
+
 ## Requirements
 
-You need [Node.js 16+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js LTS](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
-This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
+This workflow need one of JetBrains products (**2019.1+**), and its shell script to works
+
 
 ## About issues
 
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
-* macOS 13.3
+* macOS 14.0
 * Alfred 5 (latest available)
-* at least Node 16, but not really important, node is only required to install this workflow
+* at least Node 18, but not really important, node is only required to install this workflow
 
-Please check the troubleshooting guide first, and other issues.
-And please follow the issue template for bug report 🙏
 
 ## Installation / Update
 
-`npm install -g @bchatard/alfred-jetbrains`
-
-
-### Init shell script
-
-- Via JetBrains Toolbox:
-  - Open the JetBrains Toolbox window, and then click on the parameter icon;
-  - In the following form, enable _Generate shell scripts_, and set a path for script
-  - More info: [Toolbox App 1.11: What’s New.](https://blog.jetbrains.com/blog/2018/08/23/toolbox-app-1-11-whats-new/)
-- Via Product (removed since 2023.x)
-
-
-## How to use
-
-- Open Alfred with your usual hotkey
-- Type keyword (example `pstorm`) followed by your project name
-
-
-### Default Keywords
-
-- Cross Products: `jb` (search projects on for all products)
-
-- AndroidStudio: `studio`;
-- AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
-- Aqua: `aqua`;
-- CLion: `clion`;
-- DataGrip: `datagrip`;
-- DataSpell: `dataspell`;
-- Fleet: `fleet`;
-- GoLand: `goland`;
-- IntelliJ Idea: `idea` (default to Ultimate Edition);
-- PhpStorm: `pstorm`;
-- PyCharm: `pycharm` (default to Professional Edition);
-- Rider: `rider`;
-- RubyMine: `rubymine`;
-- WebStorm: `wstorm`;
-
-### Supported versions
-I test with these products/versions:
-
-- AndroidStudio: since 3.+;
-- AppCode: since 2018.3;
-- Aqua: since 2023.1;
-- CLion: since 2018.3;
-- DataGrip: since 2018.3;
-- DataSpell: since 2023.1;
-- Fleet: public preview
-- GoLand: since 2018.3;
-- IntelliJ Idea: since 2018.3;
-- PhpStorm: since 2018.3;
-- PyCharm: since 2018.3;
-- Rider: since 2018.3;
-- RubyMine: since 2018.3;
-- WebStorm: since 2018.3;
+`$ npm install -g @bchatard/alfred-jetbrains`
 
 
 ## Changelog
 
 [Changelog](https://github.com/bchatard/alfred-jetbrains/releases)
+
 
 ## License
 
@@ -2328,6 +2347,13 @@ I test with these products/versions:
 			<real>1025</real>
 			<key>ypos</key>
 			<real>1110</real>
+		</dict>
+		<key>42E7A634-7329-493F-8D10-DE6EBB15CB8B</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>2125</real>
 		</dict>
 		<key>4351DCAE-6808-4ECC-A24D-05AF772CEC48</key>
 		<dict>
@@ -2720,6 +2746,25 @@ I test with these products/versions:
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string>If you have performance issue, disable this feature</string>
+			<key>label</key>
+			<string>Load your ~/.zshrc</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>jb_source_zshrc</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>{}</string>
 				<key>required</key>
 				<false/>
@@ -2791,7 +2836,7 @@ I test with these products/versions:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.8</string>
+	<string>2.0.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>

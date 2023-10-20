@@ -8,16 +8,16 @@
 
 ## Requirements
 
-You need [Node.js 14+](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js LTS](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
 ## About issues
 
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
-* macOS 13.3
+* macOS 14.0
 * Alfred 5 (latest available)
-* at least Node 16, but not really important, node is only required to install this workflow
+* at least Node 18, but not really important, node is only required to install this workflow
 
 Please check the [troubleshooting guide](doc/troubleshooting.md) first, and other issues.
 And please follow the issue template for bug report 🙏
@@ -61,7 +61,9 @@ $ npm install -g @bchatard/alfred-jetbrains
 - PyCharm: `pycharm` (default to Community Edition, see [customisation to change this](#customisation));
 - Rider: `rider`;
 - RubyMine: `rubymine`;
+- RustRover: `rustrover`;
 - WebStorm: `wstorm`;
+- Writerside: `writerside`;
 
 </details>
 
@@ -82,7 +84,9 @@ I test with these products/versions:
 - PyCharm: since 2018.3;
 - Rider: since 2018.3;
 - RubyMine: since 2018.3;
+- RustRover: since 2023.2;
 - WebStorm: since 2018.3;
+- Writerside: since 2023.2;
 
 For other versions:
 

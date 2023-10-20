@@ -17,6 +17,8 @@ Here the list of possible `bin` per product:
 * PyCharm Professional: `pycharm`, `charm`, `pycharmp`, `charmp`
 * Rider: `rider`
 * RubyMine: `rubymine`, `mine`
+* RustRover: `rustrover`
 * WebStorm: `webstorm`, `wstorm`
+* Writerside: `writerside`
 
 Customisation will be available
