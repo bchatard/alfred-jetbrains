@@ -1,9 +1,10 @@
 # Customise product Edition
 
-JetBrains deliver different edition for some products (actually PyCharm and IntelliJIdea). This workflow works with a default edition for this case:
+JetBrains deliver different edition for some products. This workflow works with a default edition for this case:
 
 - for PyCharm, it's the Community Edition
 - for IntelliJIdea, it's the Community Edition
+- for CLion, it's the "Standard"
 
 If you work with a different edition you need to customise this workflow.
 

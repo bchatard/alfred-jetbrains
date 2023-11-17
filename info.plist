@@ -810,7 +810,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli open --product cLion --path "$1"</string>
+				<string>./bin/alfred_jetbrains_cli open --product ${jb_clion_edition} --path "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1031,7 +1031,7 @@
 				<key>runningsubtext</key>
 				<string>searching project</string>
 				<key>script</key>
-				<string>./bin/alfred_jetbrains_cli search --product cLion</string>
+				<string>./bin/alfred_jetbrains_cli search --product ${jb_clion_edition}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2834,9 +2834,35 @@ It's my daily tool, so I will fix issue that I can reproduce with **my environme
 			<key>variable</key>
 			<string>jb_pycharm_edition</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>cLion</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Standard</string>
+						<string>cLion</string>
+					</array>
+					<array>
+						<string>Nova</string>
+						<string>cLionNova</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>CLion Edition</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>jb_clion_edition</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.9</string>
+	<string>2.0.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>

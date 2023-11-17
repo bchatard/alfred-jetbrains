@@ -51,7 +51,7 @@ $ npm install -g @bchatard/alfred-jetbrains
 - AndroidStudio: `studio`;
 - AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
 - Aqua: `aqua`;
-- CLion: `clion`;
+- CLion/CLion Nova: `clion` (default to "Standard", see [customisation to change this](#customisation));
 - DataGrip: `datagrip`;
 - DataSpell: `dataspell`;
 - Fleet: `fleet`;
@@ -75,6 +75,7 @@ I test with these products/versions:
 - AppCode: since 2018.3;
 - Aqua: since 2023.1;
 - CLion: since 2018.3;
+- CLion Nova: since 2023.3;
 - DataGrip: since 2018.3;
 - DataSpell: since 2023.1;
 - Fleet: public preview;
@@ -87,11 +88,6 @@ I test with these products/versions:
 - RustRover: since 2023.2;
 - WebStorm: since 2018.3;
 - Writerside: since 2023.2;
-
-For other versions:
-
-- Very old PhpStorm (and only PhpStorm), you can use my first workflow: [PhpStorm Alfred Workflow](https://github.com/bchatard/phpstorm-alfred-workflow)
-- Prior to 2019, you can use my previous workflow: [JetBrains Alfred Workflow](https://github.com/bchatard/jetbrains-alfred-workflow)
 
 </details>
 
