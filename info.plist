@@ -2227,7 +2227,7 @@ echo "${PROJECT_NAME}"</string>
 
 ## Requirements
 
-You need [Node.js LTS](https://nodejs.org) and [Alfred 5.0+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js LTS](https://nodejs.org) and [Alfred 5.5+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its shell script to works
 
@@ -2235,8 +2235,8 @@ This workflow need one of JetBrains products (**2019.1+**), and its shell script
 ## About issues
 
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
-* macOS 14.0
-* Alfred 5 (latest available)
+* macOS 14.4
+* Alfred 5.5 (latest available)
 * at least Node 18, but not really important, node is only required to install this workflow
 
 
@@ -2862,7 +2862,7 @@ It's my daily tool, so I will fix issue that I can reproduce with **my environme
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.10</string>
+	<string>2.0.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>

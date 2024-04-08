@@ -18,6 +18,8 @@ body:
           required: true
         - label: Yes, my issue is not listed in other issues.
           required: true
+        - label: Yes, I reload my Alfred cache (with `reload`)
+          required: true
   - type: textarea
     id: bug
     attributes:
