@@ -2862,7 +2862,7 @@ It's my daily tool, so I will fix issue that I can reproduce with **my environme
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0.11</string>
+	<string>2.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/bchatard/alfred-jetbrains/</string>
 </dict>
