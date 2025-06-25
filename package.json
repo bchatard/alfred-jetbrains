@@ -1,6 +1,6 @@
 {
   "name": "@bchatard/alfred-jetbrains",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Alfred 5 workflow to easily open your projects with your favorite JetBrains product.",
   "exports": "./bin/alfred_jetbrains_cli",
   "type": "module",
