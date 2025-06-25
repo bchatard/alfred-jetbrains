@@ -1,6 +1,6 @@
 {
   "name": "@bchatard/alfred-jetbrains",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Alfred 5 workflow to easily open your projects with your favorite JetBrains product.",
   "exports": "./bin/alfred_jetbrains_cli",
   "type": "module",
@@ -29,15 +29,16 @@
     "url": "https://github.com/bchatard/alfred-jetbrains/issues"
   },
   "homepage": "https://github.com/bchatard/alfred-jetbrains#readme",
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "np": "^10.2.0"
+  },
   "engines": {
-    "node": ">=14"
+    "node": ">=22"
   },
   "volta": {
-    "node": "18.18.2"
+    "node": "22.14.0"
   }
 }
