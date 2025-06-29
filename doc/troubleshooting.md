@@ -10,5 +10,8 @@ This workflow use Alfred cache mechanism: https://www.alfredapp.com/help/workflo
 
 The TTL is 8600s
 
+You can flush all caches with `reload` command from Alfred
+![Global cache](./img/alfred_global_cache.png)
+
 You can clean the cache with the following steps:
-![To clean the cache](./img/alfred_cache.png)
+![Workflow cache](./img/alfred_workflow_cache.png)
