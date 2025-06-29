@@ -5,7 +5,7 @@
   "exports": "./bin/alfred_jetbrains_cli",
   "type": "module",
   "scripts": {
-    "postinstall": "./bin/alfred_jetbrains_cli install",
+    "postinstall": "./bin/alfred_jetbrains_cli install --retain",
     "preuninstall": "echo \"Error: TODO\" && exit 0",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
