@@ -25,8 +25,15 @@ And please follow the issue template for bug report 🙏
 ## Installation / Update
 
 ```shell
-$ npm install -g @bchatard/alfred-jetbrains
+npm install -g @bchatard/alfred-jetbrains
 ```
+
+or download binary from [alfred-jetbrains-cli releases page](https://github.com/bchatard/alfred-jetbrains-cli/releases/latest)
+```shell
+chmod +x alfred_jetbrains_cli
+./alfred_jetbrains_cli install
+```
+(new process to remove Node dependency, it might not work for all cases)
 
 ### Init shell script
 
