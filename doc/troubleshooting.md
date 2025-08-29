@@ -8,7 +8,7 @@ But feel free to open issue
 
 This workflow use Alfred cache mechanism: https://www.alfredapp.com/help/workflows/inputs/script-filter/json/#cache.
 
-The TTL is 8600s
+The TTL is 86400s one day.
 
 You can flush all caches with `reload` command from Alfred
 ![Global cache](./img/alfred_global_cache.png)
