@@ -8,15 +8,15 @@
 
 ## Requirements
 
-You need [Node.js LTS](https://nodejs.org) and [Alfred 5.6+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+You need [Node.js LTS](https://nodejs.org) and [Alfred 5.7+](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
 
 This workflow need one of JetBrains products (**2019.1+**), and its [shell script](#init-shell-script) to works
 
 ## About issues
 
 It's my daily tool, so I will fix issue that I can reproduce with **my environment**, which is
-* macOS 15.5
-* Alfred 5.6 (latest available)
+* macOS 26.1
+* Alfred 5.7 (latest available)
 * at least Node 22, but not really important, node is only required to install this workflow
 
 Please check the [troubleshooting guide](doc/troubleshooting.md) first, and other issues.
@@ -30,6 +30,8 @@ npm install -g @bchatard/alfred-jetbrains
 
 or download binary from [alfred-jetbrains-cli releases page](https://github.com/bchatard/alfred-jetbrains-cli/releases/latest)
 ```shell
+# Since the bin is not (yet) signed
+xattr -d com.apple.quarantine bin/alfred_jetbrains_cli
 chmod +x alfred_jetbrains_cli
 ./alfred_jetbrains_cli install
 ```
