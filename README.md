@@ -31,8 +31,8 @@ npm install -g @bchatard/alfred-jetbrains
 or download binary from [alfred-jetbrains-cli releases page](https://github.com/bchatard/alfred-jetbrains-cli/releases/latest)
 ```shell
 # Since the bin is not (yet) signed
-xattr -d com.apple.quarantine bin/alfred_jetbrains_cli
-chmod +x alfred_jetbrains_cli
+xattr -d com.apple.quarantine ./alfred_jetbrains_cli
+chmod +x ./alfred_jetbrains_cli
 ./alfred_jetbrains_cli install
 ```
 (new process to remove Node dependency, it might not work for all cases)
@@ -57,22 +57,7 @@ chmod +x alfred_jetbrains_cli
 
 - Cross Products: `jb` (search projects on for all products)
 
-- AndroidStudio: `studio`;
-- AppCode: `appcode` (sunset by JetBrains, no more support on my side too);
-- Aqua: `aqua`;
-- CLion/CLion Nova: `clion` (default to "Standard", see [customisation to change this](#customisation));
-- DataGrip: `datagrip`;
-- DataSpell: `dataspell`;
-- Fleet: `fleet`;
-- GoLand: `goland`;
-- IntelliJ Idea: `idea` (default to Community Edition, see [customisation to change this](#customisation));
-- PhpStorm: `pstorm`;
-- PyCharm: `pycharm` (default to Community Edition, see [customisation to change this](#customisation));
-- Rider: `rider`;
-- RubyMine: `rubymine`;
-- RustRover: `rustrover`;
-- WebStorm: `wstorm`;
-- Writerside: `writerside`;
+- [Keywords by products](doc/customisation/keywords.md#default-keywords)
 
 </details>
 
@@ -104,9 +89,10 @@ I test with these products/versions:
 
 - [Change Product Edition](doc/customisation/edition.md)
 - [Change `bin` name](doc/customisation/bin.md)
+- [Change keywords](doc/customisation/keywords.md)
 
 Some of JetBrains product are available in different editions (ex: PyCharm - Professional, Edu & Community).
-In that case they share the same `bin` / `keyword`, so you need to customise the _Preferences_ folder to retrieve your projects.
+In that case they share the same `bin` / `keyword`, so you need to customize the _Preferences_ folder to retrieve your projects.
 
 
 ## Changelog
